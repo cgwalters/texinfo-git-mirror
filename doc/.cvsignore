@@ -32,3 +32,4 @@ texinfo.toc
 texinfo.xml
 version.texi
 version-stnd.texi
+*.1
