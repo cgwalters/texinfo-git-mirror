@@ -993,23 +993,14 @@ the state of a new revision is set to `<samp>Exp</samp>' when
 it is created.  The state is visible in the output from
 <var>cvs log</var> (see section <a href="#SEC142">log--Print out log information for files</a>), and in the
 `<samp>$Log: cvs_16.html,v $
-`<samp>Revision 1.9  2003/05/20 16:40:00  pertusus
-`<samp>        * texi2html.pl, texi2html.init: split pass_texi in 2 pass. pass_texi
-`<samp>        rearranges texi expanding macros and values, removing comments.
-`<samp>        pass_structure remove unneeded empty lines and find out the structure
-`<samp>        of the document.
-`<samp>        use a different formatting for menu entries in other environments than
-`<samp>        menus.
-`<samp>        cleaning of code.
-`<samp>        use close_stack in all the passes to close environments not rightly
-`<samp>        closed. Fix some places where stack wasn't closed rightly.
-`<samp>        New direction, 'NodeNext' and 'NodePrev' which contains the prev node
-`<samp>        and next node which may be different from Next and Prev for sections.
-`<samp>        use style font-size:smaller in pre instead of <font> for smallexample
-`<samp>        and friends to produce valid html.
-`<samp>        spaces and arguments following commands are removed or kept in the
-`<samp>        same way than makeinfo does.
-`<samp>        * Tests/*: add tests for environments not closed. Sync with code.
+`<samp>Revision 1.10  2003/06/16 14:41:24  pertusus
+`<samp>        * texi2html.pl: @include replaced by an empty line
+`<samp>        no end of line after last line when expanding macros
+`<samp>        include of files within lines expanded from macros happen
+`<samp>        at the right place
+`<samp>        better handling of format command in section names and of empty
+`<samp>        raw formats (like @html@end html)
+`<samp>        * Tests/*: sync with code
 `<samp></samp>' and `<samp>$State: Exp $</samp>' keywords
 (see section <a href="cvs_12.html#SEC98">Keyword substitution</a>).  Note that <small>CVS</small>
 uses the <code>dead</code> state for its own purposes; to

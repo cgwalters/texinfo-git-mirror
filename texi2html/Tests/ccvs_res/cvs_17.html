@@ -145,9 +145,9 @@ See <a href="cvs_16.html#SEC117">Global options</a>.
 
 <p>Keyword expansion modes (see section <a href="cvs_12.html#SEC102">Substitution modes</a>):
 </p><table><tr><td>&nbsp;</td><td class="example"><pre>
--kkv  $Id: cvs_17.html,v 1.9 2003/05/20 16:40:00 pertusus Exp $
--kkvl $Id: cvs_17.html,v 1.9 2003/05/20 16:40:00 pertusus Exp $
--kk   $Id: cvs_17.html,v 1.9 2003/05/20 16:40:00 pertusus Exp $
+-kkv  $Id: cvs_17.html,v 1.10 2003/06/16 14:41:24 pertusus Exp $
+-kkvl $Id: cvs_17.html,v 1.10 2003/06/16 14:41:24 pertusus Exp $
+-kk   $Id: cvs_17.html,v 1.10 2003/06/16 14:41:24 pertusus Exp $
 -kv   file1,v 1.1 1993/12/09 03:21:13 joe Exp
 -ko   <i>no expansion</i>
 -kb   <i>no expansion, file is binary</i>
@@ -155,33 +155,24 @@ See <a href="cvs_16.html#SEC117">Global options</a>.
 <p>Keywords (see section <a href="cvs_12.html#SEC99">Keyword List</a>):
 </p><table><tr><td>&nbsp;</td><td class="example"><pre>
 $Author: pertusus $
-$Date: 2003/05/20 16:40:00 $
-$Header: /cvsroot/texinfo/texinfo/texi2html/Tests/ccvs_res/Attic/cvs_17.html,v 1.9 2003/05/20 16:40:00 pertusus Exp $
-$Id: cvs_17.html,v 1.9 2003/05/20 16:40:00 pertusus Exp $
+$Date: 2003/06/16 14:41:24 $
+$Header: /cvsroot/texinfo/texinfo/texi2html/Tests/ccvs_res/Attic/cvs_17.html,v 1.10 2003/06/16 14:41:24 pertusus Exp $
+$Id: cvs_17.html,v 1.10 2003/06/16 14:41:24 pertusus Exp $
 $Locker:  $
 $Name:  $
 $RCSfile: cvs_17.html,v $
-$Revision: 1.9 $
+$Revision: 1.10 $
 $Source: /cvsroot/texinfo/texinfo/texi2html/Tests/ccvs_res/Attic/cvs_17.html,v $
 $State: Exp $
 $Log: cvs_17.html,v $
-Revision 1.9  2003/05/20 16:40:00  pertusus
-        * texi2html.pl, texi2html.init: split pass_texi in 2 pass. pass_texi
-        rearranges texi expanding macros and values, removing comments.
-        pass_structure remove unneeded empty lines and find out the structure
-        of the document.
-        use a different formatting for menu entries in other environments than
-        menus.
-        cleaning of code.
-        use close_stack in all the passes to close environments not rightly
-        closed. Fix some places where stack wasn't closed rightly.
-        New direction, 'NodeNext' and 'NodePrev' which contains the prev node
-        and next node which may be different from Next and Prev for sections.
-        use style font-size:smaller in pre instead of <font> for smallexample
-        and friends to produce valid html.
-        spaces and arguments following commands are removed or kept in the
-        same way than makeinfo does.
-        * Tests/*: add tests for environments not closed. Sync with code.
+Revision 1.10  2003/06/16 14:41:24  pertusus
+        * texi2html.pl: @include replaced by an empty line
+        no end of line after last line when expanding macros
+        include of files within lines expanded from macros happen
+        at the right place
+        better handling of format command in section names and of empty
+        raw formats (like @html@end html)
+        * Tests/*: sync with code
 
 Revision 1.1  1993/12/09 03:30:17  joe
 Initial revision

@@ -98,12 +98,12 @@ a new revision of the file.
 <dd><p>The login name of the user who checked in the revision.
 </p><a name="IDX191"></a>
 </dd>
-<dt><code> $Date: 2003/05/20 16:40:00 $
+<dt><code> $Date: 2003/06/16 14:41:24 $
 </code></dt>
 <dd><p>The date and time (UTC) the revision was checked in.
 </p><a name="IDX192"></a>
 </dd>
-<dt><code> $Header: /cvsroot/texinfo/texinfo/texi2html/Tests/ccvs_res/Attic/cvs_12.html,v 1.9 2003/05/20 16:40:00 pertusus Exp $
+<dt><code> $Header: /cvsroot/texinfo/texinfo/texi2html/Tests/ccvs_res/Attic/cvs_12.html,v 1.10 2003/06/16 14:41:24 pertusus Exp $
 </code></dt>
 <dd><p>A standard header containing the full pathname of the
 <small>RCS</small> file, the revision number, the date (UTC), the
@@ -111,9 +111,9 @@ author, the state, and the locker (if locked).  Files
 will normally never be locked when you use <small>CVS</small>.
 </p><a name="IDX193"></a>
 </dd>
-<dt><code> $Id: cvs_12.html,v 1.9 2003/05/20 16:40:00 pertusus Exp $
+<dt><code> $Id: cvs_12.html,v 1.10 2003/06/16 14:41:24 pertusus Exp $
 </code></dt>
-<dd><p>Same as <code>$Header: /cvsroot/texinfo/texinfo/texi2html/Tests/ccvs_res/Attic/cvs_12.html,v 1.9 2003/05/20 16:40:00 pertusus Exp $</code>, except that the <small>RCS</small>
+<dd><p>Same as <code>$Header: /cvsroot/texinfo/texinfo/texi2html/Tests/ccvs_res/Attic/cvs_12.html,v 1.10 2003/06/16 14:41:24 pertusus Exp $</code>, except that the <small>RCS</small>
 filename is without a path.
 </p><a name="IDX194"></a>
 </dd>
@@ -133,23 +133,14 @@ co -r first</code>, the keyword expands to `<samp>Name: first</samp>'.
 </p><a name="IDX196"></a>
 </dd>
 <dt><code> $Log: cvs_12.html,v $
-<dt><code> Revision 1.9  2003/05/20 16:40:00  pertusus
-<dt><code>         * texi2html.pl, texi2html.init: split pass_texi in 2 pass. pass_texi
-<dt><code>         rearranges texi expanding macros and values, removing comments.
-<dt><code>         pass_structure remove unneeded empty lines and find out the structure
-<dt><code>         of the document.
-<dt><code>         use a different formatting for menu entries in other environments than
-<dt><code>         menus.
-<dt><code>         cleaning of code.
-<dt><code>         use close_stack in all the passes to close environments not rightly
-<dt><code>         closed. Fix some places where stack wasn't closed rightly.
-<dt><code>         New direction, 'NodeNext' and 'NodePrev' which contains the prev node
-<dt><code>         and next node which may be different from Next and Prev for sections.
-<dt><code>         use style font-size:smaller in pre instead of <font> for smallexample
-<dt><code>         and friends to produce valid html.
-<dt><code>         spaces and arguments following commands are removed or kept in the
-<dt><code>         same way than makeinfo does.
-<dt><code>         * Tests/*: add tests for environments not closed. Sync with code.
+<dt><code> Revision 1.10  2003/06/16 14:41:24  pertusus
+<dt><code>         * texi2html.pl: @include replaced by an empty line
+<dt><code>         no end of line after last line when expanding macros
+<dt><code>         include of files within lines expanded from macros happen
+<dt><code>         at the right place
+<dt><code>         better handling of format command in section names and of empty
+<dt><code>         raw formats (like @html@end html)
+<dt><code>         * Tests/*: sync with code
 <dt><code>
 </code></dt>
 <dd><p>The log message supplied during commit, preceded by a
@@ -164,23 +155,14 @@ file contains:
   /* Here is what people have been up to:
    *
    * $Log: cvs_12.html,v $
-   * Revision 1.9  2003/05/20 16:40:00  pertusus
-   *         * texi2html.pl, texi2html.init: split pass_texi in 2 pass. pass_texi
-   *         rearranges texi expanding macros and values, removing comments.
-   *         pass_structure remove unneeded empty lines and find out the structure
-   *         of the document.
-   *         use a different formatting for menu entries in other environments than
-   *         menus.
-   *         cleaning of code.
-   *         use close_stack in all the passes to close environments not rightly
-   *         closed. Fix some places where stack wasn't closed rightly.
-   *         New direction, 'NodeNext' and 'NodePrev' which contains the prev node
-   *         and next node which may be different from Next and Prev for sections.
-   *         use style font-size:smaller in pre instead of <font> for smallexample
-   *         and friends to produce valid html.
-   *         spaces and arguments following commands are removed or kept in the
-   *         same way than makeinfo does.
-   *         * Tests/*: add tests for environments not closed. Sync with code.
+   * Revision 1.10  2003/06/16 14:41:24  pertusus
+   *         * texi2html.pl: @include replaced by an empty line
+   *         no end of line after last line when expanding macros
+   *         include of files within lines expanded from macros happen
+   *         at the right place
+   *         better handling of format command in section names and of empty
+   *         raw formats (like @html@end html)
+   *         * Tests/*: sync with code
    *
    * Revision 1.1  1997/01/03 14:23:51  joe
    * Add the superfrobnicate option
@@ -202,7 +184,7 @@ See section <a href="#SEC103">Problems with the $Log$ keyword.</a>.
 <dd><p>The name of the RCS file without a path.
 </p><a name="IDX198"></a>
 </dd>
-<dt><code> $Revision: 1.9 $
+<dt><code> $Revision: 1.10 $
 </code></dt>
 <dd><p>The revision number assigned to the revision.
 </p><a name="IDX199"></a>
@@ -241,10 +223,10 @@ assigned with <code>cvs admin -s</code>--see <a href="cvs_16.html#SEC120">admin 
 <h2> 12.2 Using keywords </h2>
 
 <p>To include a keyword string you simply include the
-relevant text string, such as <code>$Id: cvs_12.html,v 1.9 2003/05/20 16:40:00 pertusus Exp $</code>, inside the
+relevant text string, such as <code>$Id: cvs_12.html,v 1.10 2003/06/16 14:41:24 pertusus Exp $</code>, inside the
 file, and commit the file.  <small>CVS</small> will automatically
 expand the string as part of the commit operation.
-</p><p>It is common to embed the <code>$Id: cvs_12.html,v 1.9 2003/05/20 16:40:00 pertusus Exp $</code> string in
+</p><p>It is common to embed the <code>$Id: cvs_12.html,v 1.10 2003/06/16 14:41:24 pertusus Exp $</code> string in
 the source files so that it gets passed through to
 generated files.  For example, if you are managing
 computer program source code, you might include a
@@ -262,11 +244,11 @@ binary files.
 </p><table><tr><td>&nbsp;</td><td class="example"><pre>
 $ ident samp.c
 samp.c:
-     $Id: cvs_12.html,v 1.9 2003/05/20 16:40:00 pertusus Exp $
+     $Id: cvs_12.html,v 1.10 2003/06/16 14:41:24 pertusus Exp $
 $ gcc samp.c
 $ ident a.out
 a.out:
-     $Id: cvs_12.html,v 1.9 2003/05/20 16:40:00 pertusus Exp $
+     $Id: cvs_12.html,v 1.10 2003/06/16 14:41:24 pertusus Exp $
 </pre></td></tr></table>
 <a name="IDX202"></a>
 <p>S<small>CCS</small> is another popular revision control system.
@@ -278,7 +260,7 @@ easy to include keywords that are detected by either
 command.  Simply prefix the keyword with the
 magic <small>SCCS</small> phrase, like this:
 </p><table><tr><td>&nbsp;</td><td class="example"><pre>
-static char *id=&quot;@(#) $Id: cvs_12.html,v 1.9 2003/05/20 16:40:00 pertusus Exp $&quot;;
+static char *id=&quot;@(#) $Id: cvs_12.html,v 1.10 2003/06/16 14:41:24 pertusus Exp $&quot;;
 </pre></td></tr></table>
 <hr size="6">
 <a name="NOD101"></a>
@@ -351,7 +333,7 @@ see <a href="cvs_9.html#SEC80">Handling binary files</a>, and <a href="cvs_5.htm
 <dt>`<samp> -kkv
 </samp>'</dt>
 <dd><p>Generate keyword strings using the default form, e.g.
-<code>$Revision: 1.9 $</code> for the <code>Revision</code>
+<code>$Revision: 1.10 $</code> for the <code>Revision</code>
 keyword.
 </p></dd>
 <dt>`<samp> -kkvl
@@ -365,8 +347,8 @@ The locker's name is only relevant if <code>cvs admin
 </samp>'</dt>
 <dd><p>Generate only keyword names in keyword strings; omit
 their values.  For example, for the <code>Revision</code>
-keyword, generate the string <code>$Revision: 1.9 $</code>
-instead of <code>$Revision: 1.9 $</code>.  This option
+keyword, generate the string <code>$Revision: 1.10 $</code>
+instead of <code>$Revision: 1.10 $</code>.  This option
 is useful to ignore differences due to keyword
 substitution when comparing different revisions of a
 file (see section <a href="cvs_5.html#SEC64">Merging and keywords</a>).
@@ -376,8 +358,8 @@ file (see section <a href="cvs_5.html#SEC64">Merging and keywords</a>).
 <dd><p>Generate the old keyword string, present in the working
 file just before it was checked in.  For example, for
 the <code>Revision</code> keyword, generate the string
-<code>$Revision: 1.9 $</code> instead of
-<code>$Revision: 1.9 $</code> if that is how the
+<code>$Revision: 1.10 $</code> instead of
+<code>$Revision: 1.10 $</code> if that is how the
 string appeared when the file was checked in.
 </p></dd>
 <dt>`<samp> -kb
@@ -395,10 +377,10 @@ only to terminate lines, this is the same as
 </samp>'</dt>
 <dd><p>Generate only keyword values for keyword strings.  For
 example, for the <code>Revision</code> keyword, generate the string
-<code>5.7</code> instead of <code>$Revision: 1.9 $</code>.
+<code>5.7</code> instead of <code>$Revision: 1.10 $</code>.
 This can help generate files in programming languages
 where it is hard to strip keyword delimiters like
-<code>$Revision: 1.9 $</code> from a string.  However,
+<code>$Revision: 1.10 $</code> from a string.  However,
 further keyword substitution cannot be performed once
 the keyword names are removed, so this option should be
 used with care.
@@ -430,23 +412,14 @@ handle an export containing binary files correctly.
 <h2> 12.5 Problems with the $Log$ keyword. </h2>
 
 <p>The <code>$Log: cvs_12.html,v $
-<p>The <code>Revision 1.9  2003/05/20 16:40:00  pertusus
-<p>The <code>        * texi2html.pl, texi2html.init: split pass_texi in 2 pass. pass_texi
-<p>The <code>        rearranges texi expanding macros and values, removing comments.
-<p>The <code>        pass_structure remove unneeded empty lines and find out the structure
-<p>The <code>        of the document.
-<p>The <code>        use a different formatting for menu entries in other environments than
-<p>The <code>        menus.
-<p>The <code>        cleaning of code.
-<p>The <code>        use close_stack in all the passes to close environments not rightly
-<p>The <code>        closed. Fix some places where stack wasn't closed rightly.
-<p>The <code>        New direction, 'NodeNext' and 'NodePrev' which contains the prev node
-<p>The <code>        and next node which may be different from Next and Prev for sections.
-<p>The <code>        use style font-size:smaller in pre instead of <font> for smallexample
-<p>The <code>        and friends to produce valid html.
-<p>The <code>        spaces and arguments following commands are removed or kept in the
-<p>The <code>        same way than makeinfo does.
-<p>The <code>        * Tests/*: add tests for environments not closed. Sync with code.
+<p>The <code>Revision 1.10  2003/06/16 14:41:24  pertusus
+<p>The <code>        * texi2html.pl: @include replaced by an empty line
+<p>The <code>        no end of line after last line when expanding macros
+<p>The <code>        include of files within lines expanded from macros happen
+<p>The <code>        at the right place
+<p>The <code>        better handling of format command in section names and of empty
+<p>The <code>        raw formats (like @html@end html)
+<p>The <code>        * Tests/*: sync with code
 <p>The <code></code> keyword is somewhat
 controversial.  As long as you are working on your
 development system the information is easily accessible
@@ -456,23 +429,14 @@ the file the history information might be useless
 anyhow.
 </p><p>A more serious concern is that <small>CVS</small> is not good at
 handling <code>$Log: cvs_12.html,v $
-handling <code>Revision 1.9  2003/05/20 16:40:00  pertusus
-handling <code>        * texi2html.pl, texi2html.init: split pass_texi in 2 pass. pass_texi
-handling <code>        rearranges texi expanding macros and values, removing comments.
-handling <code>        pass_structure remove unneeded empty lines and find out the structure
-handling <code>        of the document.
-handling <code>        use a different formatting for menu entries in other environments than
-handling <code>        menus.
-handling <code>        cleaning of code.
-handling <code>        use close_stack in all the passes to close environments not rightly
-handling <code>        closed. Fix some places where stack wasn't closed rightly.
-handling <code>        New direction, 'NodeNext' and 'NodePrev' which contains the prev node
-handling <code>        and next node which may be different from Next and Prev for sections.
-handling <code>        use style font-size:smaller in pre instead of <font> for smallexample
-handling <code>        and friends to produce valid html.
-handling <code>        spaces and arguments following commands are removed or kept in the
-handling <code>        same way than makeinfo does.
-handling <code>        * Tests/*: add tests for environments not closed. Sync with code.
+handling <code>Revision 1.10  2003/06/16 14:41:24  pertusus
+handling <code>        * texi2html.pl: @include replaced by an empty line
+handling <code>        no end of line after last line when expanding macros
+handling <code>        include of files within lines expanded from macros happen
+handling <code>        at the right place
+handling <code>        better handling of format command in section names and of empty
+handling <code>        raw formats (like @html@end html)
+handling <code>        * Tests/*: sync with code
 handling <code></code> entries when a branch is
 merged onto the main trunk.  Conflicts often result
 from the merging operation.
