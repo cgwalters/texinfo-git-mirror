@@ -4,20 +4,12 @@ umlaut.texi(,4) @c    Fri Jan 22 1999
 umlaut.texi(,5) @c
 umlaut.texi(,6) @c Revisions:
 umlaut.texi(,7) @c $Log: umlaut.passtexi,v $
-umlaut.texi(,7) @c Revision 1.3  2003/11/25 10:35:17  pertusus
-umlaut.texi(,7) @c
-umlaut.texi(,7) @c         * texi2html.pl, texi2html.init: format titlepage lines, resulting
-umlaut.texi(,7) @c         text is put in $Texi2HTML::TITLEPAGE. Use a new function reference
-umlaut.texi(,7) @c         $titlepage to finalize $Texi2HTML::TITLEPAGE.
-umlaut.texi(,7) @c         titles, subtitles and authors are put in arrays in
-umlaut.texi(,7) @c         $Texi2HTML::THISDOC{'titles'} and so on...
-umlaut.texi(,7) @c         All the skipped commands are kept for the second pass.
-umlaut.texi(,7) @c         Handle @noindent and @exdent like other skipped commands. A new
-umlaut.texi(,7) @c         type of skipped commands 'whitespace' with newline skipped
-umlaut.texi(,7) @c         and 'space' no newline skipped.
-umlaut.texi(,7) @c         change name of functions to default_`function'.
-umlaut.texi(,7) @c
-umlaut.texi(,7) @c         * examples/roff.init: add a roff formatter added.
+umlaut.texi(,7) @c Revision 1.4  2003/12/01 00:35:11  pertusus
+umlaut.texi(,7) @c         * texi2html.pl: new option -macro-expand which generates a file
+umlaut.texi(,7) @c         with expanded macros and @include.
+umlaut.texi(,7) @c         don't close environments until last pass, except for @verb, raw
+umlaut.texi(,7) @c         environments and macro stuff.
+umlaut.texi(,7) @c         * texi2html.init: use @emph instead of @i in strings.
 umlaut.texi(,7) @c
 umlaut.texi(,8) @c Revision 1.1  2003/09/01 15:08:15  pertusus
 umlaut.texi(,9) @c         * texi2html.init, texi2html.pl: hide m_cedilla.
