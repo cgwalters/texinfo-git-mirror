@@ -1,13 +1,15 @@
-# $Id: srclist.txt,v 1.15 2004/04/19 13:29:36 karl Exp $
+# $Id: srclist.txt,v 1.16 2004/04/19 13:48:19 karl Exp $
 # Files which we keep in sync from other places.
 # This is input for the script config/srclist-update in the gnulib
 # project on savannah.
 # 
-# Copyright (C) 2003, 2004 Free Software Foundation, Inc.
-# 
-# Copying and distribution of this file, with or without modification,
-# are permitted in any medium without royalty provided the copyright
-# notice and this notice are preserved.
+# This file is free software; as a special exception the author gives
+# unlimited permission to copy and/or distribute it, with or without
+# modifications, as long as this notice is preserved.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY, to the extent permitted by law; without even the
+# implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 $EMACSSRC/man/info.texi			doc
 $TEXMFROOT/tex/generic/dvips/epsf.tex		doc
