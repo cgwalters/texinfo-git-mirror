@@ -4,21 +4,16 @@ umlaut.texi(,4) @c    Fri Jan 22 1999
 umlaut.texi(,5) @c
 umlaut.texi(,6) @c Revisions:
 umlaut.texi(,7) @c $Log: umlaut.passtexi,v $
-umlaut.texi(,7) @c Revision 1.23  2004/06/21 22:04:27  pertusus
-umlaut.texi(,7) @c         * texi2html.pl: split close_stack in 2, one for the last pass the other
-umlaut.texi(,7) @c         for the previous passes.
-umlaut.texi(,7) @c         Simplification of the code handling paragraph closing.
-umlaut.texi(,7) @c         More macros don't begin paragraphs.
-umlaut.texi(,7) @c         Pass opened commands through @tab and @item.
-umlaut.texi(,7) @c         Every @def* is considered to have arguments.
-umlaut.texi(,7) @c         continue the @def* line if there is a @ at the end line.
-umlaut.texi(,7) @c         * texi2html.pl, texi2html.init: Handle @float, @listoffloats,
-umlaut.texi(,7) @c         @caption, @shortcaption,
-umlaut.texi(,7) @c         @ordf, @ordm, @registeredsymbol, @deftypecv, @LaTeX, @indicateurl,
-umlaut.texi(,7) @c         @docbook, @ifdocbook, @ifnotdocbook,
-umlaut.texi(,7) @c         @comma, @headitem, @quotation second arg, @acronym second arg.
-umlaut.texi(,7) @c         @url is now a synonym for @uref.
-umlaut.texi(,7) @c         * doc/texi2html.texi: bring up-to-date.
+umlaut.texi(,7) @c Revision 1.24  2004/10/05 22:59:36  pertusus
+umlaut.texi(,7) @c         * Makefile.am: use $(PERL) and $(srcdir) in manage_i18n.pl rule
+umlaut.texi(,7) @c         (idea of Karl Berry).
+umlaut.texi(,7) @c         * texi2html.pl, texi2html.init: Cross refs are done according to the
+umlaut.texi(,7) @c         specification presented in the texinfo manual in the node HTML Xref.
+umlaut.texi(,7) @c         The "external source of information" is also used although it isn't
+umlaut.texi(,7) @c         formally part of the specification.
+umlaut.texi(,7) @c         Handle novalidate better.
+umlaut.texi(,7) @c         * Tests: sync.
+umlaut.texi(,7) @c         * texi2html.pl, texi2html.init: handle @slanted and @abbr.
 umlaut.texi(,7) @c
 umlaut.texi(,8) @c Revision 1.1  2003/09/01 15:08:15  pertusus
 umlaut.texi(,9) @c         * texi2html.init, texi2html.pl: hide m_cedilla.
