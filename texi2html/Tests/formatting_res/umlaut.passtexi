@@ -4,12 +4,12 @@ umlaut.texi(,4) @c    Fri Jan 22 1999
 umlaut.texi(,5) @c
 umlaut.texi(,6) @c Revisions:
 umlaut.texi(,7) @c $Log: umlaut.passtexi,v $
-umlaut.texi(,7) @c Revision 1.5  2003/12/01 23:54:45  pertusus
-umlaut.texi(,7) @c
-umlaut.texi(,7) @c         * texi2html.pl: don't collect @copying lines in the first pass
-umlaut.texi(,7) @c         but in the second.
-umlaut.texi(,7) @c         Use the same mechanism to collect @copying, @documentdescription
-umlaut.texi(,7) @c         and @titlepage lines.
+umlaut.texi(,7) @c Revision 1.6  2003/12/05 16:25:32  pertusus
+umlaut.texi(,7) @c         * texi2html.pl: @sp without arg is considered to be @sp 1
+umlaut.texi(,7) @c         * Tests/formatting/formatting.texi: add test for @sp
+umlaut.texi(,7) @c         * TODO: begin a list of UTF8 characters corresponding with accented
+umlaut.texi(,7) @c         texinfo letters, in order to implement cross manual references scheme
+umlaut.texi(,7) @c         described on the bug-texinfo mailing list and maybe output utf8.
 umlaut.texi(,7) @c
 umlaut.texi(,8) @c Revision 1.1  2003/09/01 15:08:15  pertusus
 umlaut.texi(,9) @c         * texi2html.init, texi2html.pl: hide m_cedilla.
