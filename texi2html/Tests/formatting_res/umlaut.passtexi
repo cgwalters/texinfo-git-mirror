@@ -4,14 +4,14 @@ umlaut.texi(,4) @c    Fri Jan 22 1999
 umlaut.texi(,5) @c
 umlaut.texi(,6) @c Revisions:
 umlaut.texi(,7) @c $Log: umlaut.passtexi,v $
-umlaut.texi(,7) @c Revision 1.7  2003/12/10 10:44:43  pertusus
-umlaut.texi(,7) @c         * texi2html.pl, texi2html.init, TODO: add hashes for unicode encodings
-umlaut.texi(,7) @c         of accented letter and characters.
-umlaut.texi(,7) @c         A function cross_manual_links can expand node name according to the
-umlaut.texi(,7) @c         proposal I made on the texinfo-pretest list (currently unused).
+umlaut.texi(,7) @c Revision 1.8  2003/12/15 22:59:20  pertusus
 umlaut.texi(,7) @c
-umlaut.texi(,7) @c         * examples/utf8.init: add an init file for outputting of utf8 encoded
-umlaut.texi(,7) @c         characters.
+umlaut.texi(,7) @c         * texi2html.pl, texi2html.init: add hashes for the ascii
+umlaut.texi(,7) @c         representations of @-commands and a function for ascii accents.
+umlaut.texi(,7) @c         Give style functions the style @-command stack.
+umlaut.texi(,7) @c         New function duplicate_state to be used when special text is expanded
+umlaut.texi(,7) @c         within a normal context.
+umlaut.texi(,7) @c         substitute_line accepts a $state argument.
 umlaut.texi(,7) @c
 umlaut.texi(,8) @c Revision 1.1  2003/09/01 15:08:15  pertusus
 umlaut.texi(,9) @c         * texi2html.init, texi2html.pl: hide m_cedilla.
