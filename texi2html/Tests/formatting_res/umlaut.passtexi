@@ -4,19 +4,12 @@ umlaut.texi(,4) @c    Fri Jan 22 1999
 umlaut.texi(,5) @c
 umlaut.texi(,6) @c Revisions:
 umlaut.texi(,7) @c $Log: umlaut.passtexi,v $
-umlaut.texi(,7) @c Revision 1.16  2004/02/06 00:13:43  pertusus
-umlaut.texi(,7) @c         * texi2html.pl, texi2html.init, T2h_unicode.pm, T2h_nounicode.pm:
-umlaut.texi(,7) @c         when called with --test, @today value is fixed.
-umlaut.texi(,7) @c         Find the relative path leading back to the current directory from
-umlaut.texi(,7) @c         the output directory, such that the path to the image files are right.
-umlaut.texi(,7) @c         Use a ref on the Texi2HTML::Config hashes such that changing the
-umlaut.texi(,7) @c         hash used is easy. This is used in T2h_unicode.pm and
-umlaut.texi(,7) @c         T2h_nounicode.pm for expansion of nodes in external refs.
-umlaut.texi(,7) @c         Add special styles early.
-umlaut.texi(,7) @c         A new variable NEW_CROSSREF_STYLE. If true the new scheme for html
-umlaut.texi(,7) @c         cross refs proposed onthe texinfo list is used for @ref.
-umlaut.texi(,7) @c         * Tests/formatting/test_refs.texi, Tests/formatting/cross_refs.init:
-umlaut.texi(,7) @c         new files used to test the new cross ref scheme.
+umlaut.texi(,7) @c Revision 1.17  2004/02/06 23:37:46  pertusus
+umlaut.texi(,7) @c
+umlaut.texi(,7) @c         * T2h_unicode.pm, T2h_nounicode.pm: make global variables lexical
+umlaut.texi(,7) @c         variables.
+umlaut.texi(,7) @c         * texi2html.init: output header if there is only one section.
+umlaut.texi(,7) @c         * Tests/: more tests for the new cross references scheme.
 umlaut.texi(,7) @c
 umlaut.texi(,8) @c Revision 1.1  2003/09/01 15:08:15  pertusus
 umlaut.texi(,9) @c         * texi2html.init, texi2html.pl: hide m_cedilla.
