@@ -1,5 +1,4 @@
 Makefile
-texi2html.html
 texi2html.info
 texi2html.info-?
 texi2html.aux
@@ -18,3 +17,6 @@ texi2html.tp
 texi2html.txt
 texi2html.vr
 texi2html.vrs
+texi2html.dvi
+texi2html.ps
+texi2html.tmp
