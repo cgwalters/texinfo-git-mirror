@@ -4,17 +4,16 @@ umlaut.texi(,4) @c    Fri Jan 22 1999
 umlaut.texi(,5) @c
 umlaut.texi(,6) @c Revisions:
 umlaut.texi(,7) @c $Log: umlaut.passtexi,v $
-umlaut.texi(,7) @c Revision 1.21  2004/02/26 23:52:47  pertusus
+umlaut.texi(,7) @c Revision 1.22  2004/04/26 00:21:02  pertusus
 umlaut.texi(,7) @c
-umlaut.texi(,7) @c         * texi2html.pl, texi2html.init: change $DOCUMENTDESCRIPTION to
-umlaut.texi(,7) @c         $DOCUMENT_DESCRIPTION for consistency.
-umlaut.texi(,7) @c         if $ENCODING is '' don't put it in the headers.
-umlaut.texi(,7) @c         add a new entry to $Texi2HTML::THISDOC: 'title_texi', the title
-umlaut.texi(,7) @c         with texinfo @-commands.
-umlaut.texi(,7) @c         * examples/chm.init: don't convert to utf8 in the html files
-umlaut.texi(,7) @c         generated (unless the encoding is really utf8), but produce
-umlaut.texi(,7) @c         utf8 in hhc, hhk and hhp files whatever the encoding is.
-umlaut.texi(,7) @c         * doc/texi2html.texi: update.
+umlaut.texi(,7) @c         * example/book.init: stick to the same style for manual not split at
+umlaut.texi(,7) @c         node.
+umlaut.texi(,7) @c         * texi2html.pl: handle better @today even in non english cases.
+umlaut.texi(,7) @c         don't use (encoding) in open, but set it in binmode (perl seems
+umlaut.texi(,7) @c         unhappy otherwise ?).
+umlaut.texi(,7) @c         * texi2html.init: don't enclose paragraph in <p> when it is the first
+umlaut.texi(,7) @c         paragraph of enumerate or itemize, as the <li> is allready something
+umlaut.texi(,7) @c         like a begining of paragraph.
 umlaut.texi(,7) @c
 umlaut.texi(,8) @c Revision 1.1  2003/09/01 15:08:15  pertusus
 umlaut.texi(,9) @c         * texi2html.init, texi2html.pl: hide m_cedilla.
