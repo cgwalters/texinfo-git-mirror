@@ -26,7 +26,9 @@ texinfo.??
 texinfo.??s
 texinfo.aux
 texinfo.dvi
+texinfo.html
 texinfo.log
 texinfo.toc
+texinfo.xml
 version.texi
 version-stnd.texi
