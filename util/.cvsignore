@@ -4,3 +4,4 @@ Makefile.in
 ginstall-info
 install-info
 texindex
+texinfo.cat
