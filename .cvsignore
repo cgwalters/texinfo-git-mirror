@@ -2,6 +2,7 @@
 Makefile
 Makefile.in
 TAGS
+aclocal.m4
 autom4te.cache
 config.h
 config.in
