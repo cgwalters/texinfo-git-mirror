@@ -36,7 +36,7 @@ require 5.0;
 #--##############################################################################
 
 # CVS version:
-# $Id: texi2html.pl,v 1.1 2001/04/29 07:23:15 dprice Exp $
+# $Id: texi2html.pl,v 1.1.1.1 2001/04/29 07:23:15 dprice Exp $
 
 # Homepage:
 $T2H_HOMEPAGE = <<EOT;

@@ -5,8 +5,8 @@
 @c
 @c Revisions:
 @c $Log: umlaut.texi,v $
-@c Revision 1.1  2001/04/29 07:23:19  dprice
-@c Initial revision
+@c Revision 1.1.1.1  2001/04/29 07:23:19  dprice
+@c Initial import of texi2html
 @c
 @c Revision 1.1  2000/08/14 18:10:24  texi2htm
 @c - new command line switch (Testing purpose) -def_table

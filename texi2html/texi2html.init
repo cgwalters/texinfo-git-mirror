@@ -11,7 +11,7 @@
 # Copy this file and make changes to it, if you like.
 # Afterwards, either, load it with command-line option -init_file <your_init_file>
 #
-# $Id: texi2html.init,v 1.1 2001/04/29 07:23:13 dprice Exp $
+# $Id: texi2html.init,v 1.1.1.1 2001/04/29 07:23:13 dprice Exp $
 
 ######################################################################
 # stuff which can also be set by command-line options

@@ -20,7 +20,7 @@ package Getopt::MySimple;
 
 # --------------------------------------------------------------------------
 # Locally modified by obachman (Display type instead of env, order by cmp)
-# $Id: MySimple.pm,v 1.1 2001/04/29 07:23:10 dprice Exp $
+# $Id: MySimple.pm,v 1.1.1.1 2001/04/29 07:23:10 dprice Exp $
 
 # use strict;
 # no strict 'refs';
