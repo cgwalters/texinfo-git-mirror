@@ -1,4 +1,5 @@
 Makefile
+texi2html.1
 texi2html.info
 texi2html.info-?
 texi2html.aux
