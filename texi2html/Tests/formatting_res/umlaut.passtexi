@@ -4,13 +4,13 @@ umlaut.texi(,4) @c    Fri Jan 22 1999
 umlaut.texi(,5) @c
 umlaut.texi(,6) @c Revisions:
 umlaut.texi(,7) @c $Log: umlaut.passtexi,v $
-umlaut.texi(,7) @c Revision 1.29  2005/01/31 00:44:42  pertusus
-umlaut.texi(,7) @c
-umlaut.texi(,7) @c         * texi2html.pl, texi2html.init: more robust handling of deffn lines.
-umlaut.texi(,7) @c         The argument may be in bracket, therefore there is no difference
-umlaut.texi(,7) @c         beteen arg and other item specification for def like commands.
-umlaut.texi(,7) @c         * Tests: test for more deffn lines, and for @-commands in floats.
-umlaut.texi(,7) @c         * doc/texi2html.texi: update.
+umlaut.texi(,7) @c Revision 1.30  2005/02/03 00:28:39  pertusus
+umlaut.texi(,7) @c         * texi2html.pl: don't use open with three args, use binmode (for
+umlaut.texi(,7) @c         old perl).
+umlaut.texi(,7) @c         * doc/Makefile.am: rebuild the manual based on the sources, not
+umlaut.texi(,7) @c         on the script, as it is remade by ./configure. Use the rebuild
+umlaut.texi(,7) @c         of the manual as a check target (ideas from Derek).
+umlaut.texi(,7) @c         * Tests/*: test for results with USE_UNICODE set to 0.
 umlaut.texi(,7) @c
 umlaut.texi(,8) @c Revision 1.1  2003/09/01 15:08:15  pertusus
 umlaut.texi(,9) @c         * texi2html.init, texi2html.pl: hide m_cedilla.
