@@ -1,9 +1,6 @@
 .deps
 Makefile
 Makefile.in
-doc.c
-funs.h
 ginfo
 infokey
-key.c
 makedoc
