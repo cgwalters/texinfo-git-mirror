@@ -4,17 +4,23 @@ umlaut.texi(,4) @c    Fri Jan 22 1999
 umlaut.texi(,5) @c
 umlaut.texi(,6) @c Revisions:
 umlaut.texi(,7) @c $Log: umlaut.passtexi,v $
-umlaut.texi(,7) @c Revision 1.14  2004/01/28 01:00:07  pertusus
+umlaut.texi(,7) @c Revision 1.15  2004/02/03 01:32:37  pertusus
 umlaut.texi(,7) @c
-umlaut.texi(,7) @c         * texi2html.pl: reopen styles in preformatted environments.
-umlaut.texi(,7) @c         When there is a complex format or a table or the like the opened
-umlaut.texi(,7) @c         styles are kept such that they are reopened when there is a paragraph
-umlaut.texi(,7) @c         or a preformatted within the format.
-umlaut.texi(,7) @c         * T2h_unicode.pm: use the right code point for dotless i.
-umlaut.texi(,7) @c         * Tests/*: add tests for formats imbricated in style command.
-umlaut.texi(,7) @c         add tests for latin1 and utf8 encoded files.
-umlaut.texi(,7) @c         add tests for ifset and ifclear in macros.
-umlaut.texi(,7) @c         * Makefile.am: add the new source files and init files.
+umlaut.texi(,7) @c         * texi2html.pl, texi2html.init: add $EXTENSION variable, holding
+umlaut.texi(,7) @c         the extension for files.
+umlaut.texi(,7) @c         Add $Texi2HTML::THISDOC{'file_base_name'} and
+umlaut.texi(,7) @c         $Texi2HTML::THISDOC{'destination_directory'} such that it is possible
+umlaut.texi(,7) @c         to construct file and directory names in init files.
+umlaut.texi(,7) @c         Add $finish_out function reference called at the end of document
+umlaut.texi(,7) @c         outputting.
+umlaut.texi(,7) @c         Add $index_summary_file_begin and $index_summary_file_end to ease
+umlaut.texi(,7) @c         special index files generation.
+umlaut.texi(,7) @c         * examples/noheaders.init: perform better when split.
+umlaut.texi(,7) @c         * examples/chm.init: new init file to generate chm files (after
+umlaut.texi(,7) @c         compilation by a windows application, leads to windows help files).
+umlaut.texi(,7) @c         After JoséFonseca (jrfonseca at users dot berlios dot de) work on
+umlaut.texi(,7) @c         an older texi2html.
+umlaut.texi(,7) @c         * l2h.init: Set NO_SUBDIRS to 1, don't set html version.
 umlaut.texi(,7) @c
 umlaut.texi(,8) @c Revision 1.1  2003/09/01 15:08:15  pertusus
 umlaut.texi(,9) @c         * texi2html.init, texi2html.pl: hide m_cedilla.
