@@ -1,4 +1,4 @@
-# $Id: srclist.txt,v 1.9 2003/01/02 23:20:07 karl Exp $
+# $Id: srclist.txt,v 1.10 2003/03/25 14:07:48 karl Exp $
 # Files for which we are not the source.
 # This is meant for the script gnulib/config/srclist-update.
 
@@ -70,8 +70,6 @@ $ACLOCAL/lib-prefix.m4		m4
 $ACLOCAL/progtest.m4		m4
 
 
-$GNULIBSRC/COPYING		.
-#
 $GNULIBSRC/config/config.guess	.
 $GNULIBSRC/config/config.rpath	.
 $GNULIBSRC/config/config.sub	.
@@ -81,6 +79,7 @@ $GNULIBSRC/config/mdate-sh	doc
 $GNULIBSRC/config/missing	.
 $GNULIBSRC/config/mkinstalldirs	.
 #
+$GNULIBSRC/doc/COPYING		.
 $GNULIBSRC/doc/COPYING.DOC	.
 $GNULIBSRC/doc/INSTALL		./INSTALL.generic
 $GNULIBSRC/doc/fdl.texi		doc
