@@ -1,7 +1,9 @@
 Makefile
+autom4te-2.53.cache
 autom4te.cache
 config.cache
 config.log
 config.status
 texi2html
 texi2html.1
+check_texinfo.pl
