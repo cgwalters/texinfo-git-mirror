@@ -1,4 +1,4 @@
-# $Id: srclist.txt,v 1.1 2002/09/03 15:51:40 karl Exp $
+# $Id: srclist.txt,v 1.2 2002/09/03 23:44:58 karl Exp $
 # Files for which we are not the source.
 
 $EMACSSRC/man/info.texi			doc
@@ -82,6 +82,7 @@ $GNULIBSRC/lib/strcasecmp.c	lib
 $GNULIBSRC/lib/strdup.c		lib
 $GNULIBSRC/lib/strerror.c	lib
 $GNULIBSRC/lib/strncasecmp.c	lib
+$GNULIBSRC/lib/xalloc.h		lib
 $GNULIBSRC/lib/xstrdup.c	lib
 #
 $GNULIBSRC/m4/codeset.m4	m4
