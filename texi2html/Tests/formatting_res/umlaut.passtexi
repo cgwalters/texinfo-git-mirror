@@ -4,12 +4,12 @@ umlaut.texi(,4) @c    Fri Jan 22 1999
 umlaut.texi(,5) @c
 umlaut.texi(,6) @c Revisions:
 umlaut.texi(,7) @c $Log: umlaut.passtexi,v $
-umlaut.texi(,7) @c Revision 1.4  2003/12/01 00:35:11  pertusus
-umlaut.texi(,7) @c         * texi2html.pl: new option -macro-expand which generates a file
-umlaut.texi(,7) @c         with expanded macros and @include.
-umlaut.texi(,7) @c         don't close environments until last pass, except for @verb, raw
-umlaut.texi(,7) @c         environments and macro stuff.
-umlaut.texi(,7) @c         * texi2html.init: use @emph instead of @i in strings.
+umlaut.texi(,7) @c Revision 1.5  2003/12/01 23:54:45  pertusus
+umlaut.texi(,7) @c
+umlaut.texi(,7) @c         * texi2html.pl: don't collect @copying lines in the first pass
+umlaut.texi(,7) @c         but in the second.
+umlaut.texi(,7) @c         Use the same mechanism to collect @copying, @documentdescription
+umlaut.texi(,7) @c         and @titlepage lines.
 umlaut.texi(,7) @c
 umlaut.texi(,8) @c Revision 1.1  2003/09/01 15:08:15  pertusus
 umlaut.texi(,9) @c         * texi2html.init, texi2html.pl: hide m_cedilla.
