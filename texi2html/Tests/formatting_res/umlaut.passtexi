@@ -4,16 +4,21 @@ umlaut.texi(,4) @c    Fri Jan 22 1999
 umlaut.texi(,5) @c
 umlaut.texi(,6) @c Revisions:
 umlaut.texi(,7) @c $Log: umlaut.passtexi,v $
-umlaut.texi(,7) @c Revision 1.22  2004/04/26 00:21:02  pertusus
-umlaut.texi(,7) @c
-umlaut.texi(,7) @c         * example/book.init: stick to the same style for manual not split at
-umlaut.texi(,7) @c         node.
-umlaut.texi(,7) @c         * texi2html.pl: handle better @today even in non english cases.
-umlaut.texi(,7) @c         don't use (encoding) in open, but set it in binmode (perl seems
-umlaut.texi(,7) @c         unhappy otherwise ?).
-umlaut.texi(,7) @c         * texi2html.init: don't enclose paragraph in <p> when it is the first
-umlaut.texi(,7) @c         paragraph of enumerate or itemize, as the <li> is allready something
-umlaut.texi(,7) @c         like a begining of paragraph.
+umlaut.texi(,7) @c Revision 1.23  2004/06/21 22:04:27  pertusus
+umlaut.texi(,7) @c         * texi2html.pl: split close_stack in 2, one for the last pass the other
+umlaut.texi(,7) @c         for the previous passes.
+umlaut.texi(,7) @c         Simplification of the code handling paragraph closing.
+umlaut.texi(,7) @c         More macros don't begin paragraphs.
+umlaut.texi(,7) @c         Pass opened commands through @tab and @item.
+umlaut.texi(,7) @c         Every @def* is considered to have arguments.
+umlaut.texi(,7) @c         continue the @def* line if there is a @ at the end line.
+umlaut.texi(,7) @c         * texi2html.pl, texi2html.init: Handle @float, @listoffloats,
+umlaut.texi(,7) @c         @caption, @shortcaption,
+umlaut.texi(,7) @c         @ordf, @ordm, @registeredsymbol, @deftypecv, @LaTeX, @indicateurl,
+umlaut.texi(,7) @c         @docbook, @ifdocbook, @ifnotdocbook,
+umlaut.texi(,7) @c         @comma, @headitem, @quotation second arg, @acronym second arg.
+umlaut.texi(,7) @c         @url is now a synonym for @uref.
+umlaut.texi(,7) @c         * doc/texi2html.texi: bring up-to-date.
 umlaut.texi(,7) @c
 umlaut.texi(,8) @c Revision 1.1  2003/09/01 15:08:15  pertusus
 umlaut.texi(,9) @c         * texi2html.init, texi2html.pl: hide m_cedilla.
