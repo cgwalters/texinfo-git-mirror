@@ -1,5 +1,7 @@
 *.html
 *.pdf
+*.info
+texput.log
 Makefile
 Makefile.in
 info-stnd.??
