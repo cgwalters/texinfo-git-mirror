@@ -4,11 +4,10 @@ umlaut.texi(,4) @c    Fri Jan 22 1999
 umlaut.texi(,5) @c
 umlaut.texi(,6) @c Revisions:
 umlaut.texi(,7) @c $Log: umlaut.passtexi,v $
-umlaut.texi(,7) @c Revision 1.27  2005/01/15 23:45:34  pertusus
-umlaut.texi(,7) @c
-umlaut.texi(,7) @c         * texi2html.pl, texi2html.init: handle explicitely formats that don't
-umlaut.texi(,7) @c         trigger paragraph opening. Handle all commands even those that aren't
-umlaut.texi(,7) @c         used. End lines more correctly.
+umlaut.texi(,7) @c Revision 1.28  2005/01/16 01:18:28  pertusus
+umlaut.texi(,7) @c         * texi2html.pl: close quotes within html elements. Apply commands
+umlaut.texi(,7) @c         to @item lines in table after leading and trailing spaces removal.
+umlaut.texi(,7) @c         * Tests: regenerate.
 umlaut.texi(,7) @c
 umlaut.texi(,8) @c Revision 1.1  2003/09/01 15:08:15  pertusus
 umlaut.texi(,9) @c         * texi2html.init, texi2html.pl: hide m_cedilla.
