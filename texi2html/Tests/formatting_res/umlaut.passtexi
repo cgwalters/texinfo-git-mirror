@@ -4,13 +4,10 @@ umlaut.texi(,4) @c    Fri Jan 22 1999
 umlaut.texi(,5) @c
 umlaut.texi(,6) @c Revisions:
 umlaut.texi(,7) @c $Log: umlaut.passtexi,v $
-umlaut.texi(,7) @c Revision 1.18  2004/02/10 00:12:43  pertusus
-umlaut.texi(,7) @c
-umlaut.texi(,7) @c         * texi2html.pl: put cross manual reference and unicode related
-umlaut.texi(,7) @c         functions in the main program (instead of T2h_unicode.pm,
-umlaut.texi(,7) @c         T2h_nounicode.pm).
-umlaut.texi(,7) @c         Don't add no-... options when there are allready the options added.
-umlaut.texi(,7) @c         * T2h_unicode.pm, T2h_nounicode.pm: remove.
+umlaut.texi(,7) @c Revision 1.19  2004/02/11 21:38:51  pertusus
+umlaut.texi(,7) @c         * texi2html.pl: use the manual name (file basename) as default output
+umlaut.texi(,7) @c         directory when split.
+umlaut.texi(,7) @c         * NEWS, Tests/test.sh: update.
 umlaut.texi(,7) @c
 umlaut.texi(,8) @c Revision 1.1  2003/09/01 15:08:15  pertusus
 umlaut.texi(,9) @c         * texi2html.init, texi2html.pl: hide m_cedilla.
