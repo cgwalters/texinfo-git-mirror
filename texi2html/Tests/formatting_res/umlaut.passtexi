@@ -4,12 +4,11 @@ umlaut.texi(,4) @c    Fri Jan 22 1999
 umlaut.texi(,5) @c
 umlaut.texi(,6) @c Revisions:
 umlaut.texi(,7) @c $Log: umlaut.passtexi,v $
-umlaut.texi(,7) @c Revision 1.25  2004/12/12 19:10:15  pertusus
-umlaut.texi(,7) @c         * texi2html.pl, texi2html.init: internal targets and targets of
-umlaut.texi(,7) @c         cross refs are valid as XML identifiers. This is compatible with the
-umlaut.texi(,7) @c         updated specification presented in the texinfo manual in the node
-umlaut.texi(,7) @c         HTML Xref.
-umlaut.texi(,7) @c         * doc,Tests: sync.
+umlaut.texi(,7) @c Revision 1.26  2004/12/12 23:40:28  pertusus
+umlaut.texi(,7) @c         * texi2html.init,examples/roff.init,examples/html32.init,
+umlaut.texi(,7) @c         examples/inlinestyle.init,NEWS: add support for @euro, @sansserif.
+umlaut.texi(,7) @c         * Tests: test for @euro, @sansserif, deff arguments with braces
+umlaut.texi(,7) @c         appearing within the argument (and not at the beginning). Sync.
 umlaut.texi(,7) @c
 umlaut.texi(,8) @c Revision 1.1  2003/09/01 15:08:15  pertusus
 umlaut.texi(,9) @c         * texi2html.init, texi2html.pl: hide m_cedilla.
