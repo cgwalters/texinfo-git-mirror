@@ -14,14 +14,14 @@ Top node
 
 @node second node,,top,TOP
 second node (@@node second node,,top,TOP).
-anchor TOP: @anchor{TOP}.
+@c anchor TOP: @anchor{TOP}.
 
 @menu
 * other node::
 @end menu
 
 @node other node,,,second node
-anchor top @anchor{top}.
+@c anchor top @anchor{top}.
 ref to TOP @ref{TOP}.
 
 @bye

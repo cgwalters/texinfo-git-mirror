@@ -88,12 +88,12 @@ a new revision of the file.
 <dd><p>The login name of the user who checked in the revision.
 </p><a name="IDX191"></a>
 </dd>
-<dt><code> $Date: 2003/04/30 18:32:35 $
+<dt><code> $Date: 2003/05/02 18:20:31 $
 </code></dt>
 <dd><p>The date and time (UTC) the revision was checked in.
 </p><a name="IDX192"></a>
 </dd>
-<dt><code> $Header: /cvsroot/texinfo/texinfo/texi2html/Tests/ccvs_res/Attic/cvs_12.html,v 1.4 2003/04/30 18:32:35 pertusus Exp $
+<dt><code> $Header: /cvsroot/texinfo/texinfo/texi2html/Tests/ccvs_res/Attic/cvs_12.html,v 1.5 2003/05/02 18:20:31 pertusus Exp $
 </code></dt>
 <dd><p>A standard header containing the full pathname of the
 <small>RCS</small> file, the revision number, the date (UTC), the
@@ -101,9 +101,9 @@ author, the state, and the locker (if locked).  Files
 will normally never be locked when you use <small>CVS</small>.
 </p><a name="IDX193"></a>
 </dd>
-<dt><code> $Id: cvs_12.html,v 1.4 2003/04/30 18:32:35 pertusus Exp $
+<dt><code> $Id: cvs_12.html,v 1.5 2003/05/02 18:20:31 pertusus Exp $
 </code></dt>
-<dd><p>Same as <code>$Header: /cvsroot/texinfo/texinfo/texi2html/Tests/ccvs_res/Attic/cvs_12.html,v 1.4 2003/04/30 18:32:35 pertusus Exp $</code>, except that the <small>RCS</small>
+<dd><p>Same as <code>$Header: /cvsroot/texinfo/texinfo/texi2html/Tests/ccvs_res/Attic/cvs_12.html,v 1.5 2003/05/02 18:20:31 pertusus Exp $</code>, except that the <small>RCS</small>
 filename is without a path.
 </p><a name="IDX194"></a>
 </dd>
@@ -123,11 +123,28 @@ co -r first</code>, the keyword expands to `<samp>Name: first</samp>'.
 </p><a name="IDX196"></a>
 </dd>
 <dt><code> $Log: cvs_12.html,v $
-<dt><code> Revision 1.4  2003/04/30 18:32:35  pertusus
-<dt><code>         * texi2html.pl, texi2html.init: add the node as element when there
-<dt><code>         is a @printindex split accross pages between node and section.
-<dt><code>         * Tests/*: tests for documents with indices in top and between node
-<dt><code>         and section.
+<dt><code> Revision 1.5  2003/05/02 18:20:31  pertusus
+<dt><code>         * texi2html.pl, texi2html.init: 3 split commands: split at
+<dt><code>         chapter, section or for every node (previously node and section
+<dt><code>         where the same than node now).
+<dt><code>         specific section footer.
+<dt><code>         find prev and next like makeinfo.
+<dt><code>         new directions, for nodes: NodeUp (up for node) and Following (next
+<dt><code>         node in reading order).
+<dt><code>         if in detailmenu menu entries are not used to find next and prev.
+<dt><code>         only one Top in nodes and anchors. Any case combination accepted
+<dt><code>         for any reference.
+<dt><code>         don't close { when not associated with an @command.
+<dt><code>         reintroduced code for counting words.
+<dt><code>         new possibilities for buttons. If this is a ref to a scalar, the
+<dt><code>         text appears in navigation. If it is an array, the first element
+<dt><code>         is a direction used for the href, the second element is a scalar
+<dt><code>         ref for the text (see makeinfo.init in examples for an example).
+<dt><code>         * Tests/*: test for recursive nodes references and other little
+<dt><code>         tests
+<dt><code>         * examples/*: new directory for examples of config files. There
+<dt><code>         is a file which tries to have an output which looks like makeinfo
+<dt><code>         --html output (makeinfo.init).
 <dt><code>
 </code></dt>
 <dd><p>The log message supplied during commit, preceded by a
@@ -142,11 +159,28 @@ file contains:
   /* Here is what people have been up to:
    *
    * $Log: cvs_12.html,v $
-   * Revision 1.4  2003/04/30 18:32:35  pertusus
-   *         * texi2html.pl, texi2html.init: add the node as element when there
-   *         is a @printindex split accross pages between node and section.
-   *         * Tests/*: tests for documents with indices in top and between node
-   *         and section.
+   * Revision 1.5  2003/05/02 18:20:31  pertusus
+   *         * texi2html.pl, texi2html.init: 3 split commands: split at
+   *         chapter, section or for every node (previously node and section
+   *         where the same than node now).
+   *         specific section footer.
+   *         find prev and next like makeinfo.
+   *         new directions, for nodes: NodeUp (up for node) and Following (next
+   *         node in reading order).
+   *         if in detailmenu menu entries are not used to find next and prev.
+   *         only one Top in nodes and anchors. Any case combination accepted
+   *         for any reference.
+   *         don't close { when not associated with an @command.
+   *         reintroduced code for counting words.
+   *         new possibilities for buttons. If this is a ref to a scalar, the
+   *         text appears in navigation. If it is an array, the first element
+   *         is a direction used for the href, the second element is a scalar
+   *         ref for the text (see makeinfo.init in examples for an example).
+   *         * Tests/*: test for recursive nodes references and other little
+   *         tests
+   *         * examples/*: new directory for examples of config files. There
+   *         is a file which tries to have an output which looks like makeinfo
+   *         --html output (makeinfo.init).
    *
    * Revision 1.1  1997/01/03 14:23:51  joe
    * Add the superfrobnicate option
@@ -168,7 +202,7 @@ See section <a href="#SEC103">Problems with the $Log$ keyword.</a>.
 <dd><p>The name of the RCS file without a path.
 </p><a name="IDX198"></a>
 </dd>
-<dt><code> $Revision: 1.4 $
+<dt><code> $Revision: 1.5 $
 </code></dt>
 <dd><p>The revision number assigned to the revision.
 </p><a name="IDX199"></a>
@@ -202,10 +236,10 @@ assigned with <code>cvs admin -s</code>--see <a href="cvs_16.html#SEC120">admin 
 <h2> 12.2 Using keywords </h2>
 
 <p>To include a keyword string you simply include the
-relevant text string, such as <code>$Id: cvs_12.html,v 1.4 2003/04/30 18:32:35 pertusus Exp $</code>, inside the
+relevant text string, such as <code>$Id: cvs_12.html,v 1.5 2003/05/02 18:20:31 pertusus Exp $</code>, inside the
 file, and commit the file.  <small>CVS</small> will automatically
 expand the string as part of the commit operation.
-</p><p>It is common to embed the <code>$Id: cvs_12.html,v 1.4 2003/04/30 18:32:35 pertusus Exp $</code> string in
+</p><p>It is common to embed the <code>$Id: cvs_12.html,v 1.5 2003/05/02 18:20:31 pertusus Exp $</code> string in
 the source files so that it gets passed through to
 generated files.  For example, if you are managing
 computer program source code, you might include a
@@ -223,11 +257,11 @@ binary files.
 </p><table><tr><td>&nbsp;</td><td class="example"><pre>
 $ ident samp.c
 samp.c:
-     $Id: cvs_12.html,v 1.4 2003/04/30 18:32:35 pertusus Exp $
+     $Id: cvs_12.html,v 1.5 2003/05/02 18:20:31 pertusus Exp $
 $ gcc samp.c
 $ ident a.out
 a.out:
-     $Id: cvs_12.html,v 1.4 2003/04/30 18:32:35 pertusus Exp $
+     $Id: cvs_12.html,v 1.5 2003/05/02 18:20:31 pertusus Exp $
 </pre></td></tr></table>
 <a name="IDX202"></a>
 <p>S<small>CCS</small> is another popular revision control system.
@@ -239,7 +273,7 @@ easy to include keywords that are detected by either
 command.  Simply prefix the keyword with the
 magic <small>SCCS</small> phrase, like this:
 </p><table><tr><td>&nbsp;</td><td class="example"><pre>
-static char *id=&quot;@(#) $Id: cvs_12.html,v 1.4 2003/04/30 18:32:35 pertusus Exp $&quot;;
+static char *id=&quot;@(#) $Id: cvs_12.html,v 1.5 2003/05/02 18:20:31 pertusus Exp $&quot;;
 </pre></td></tr></table>
 <hr size="6">
 <a name="NOD101"></a>
@@ -302,7 +336,7 @@ see <a href="cvs_9.html#SEC80">Handling binary files</a>, and <a href="cvs_5.htm
 <dt>`<samp> -kkv
 </samp>'</dt>
 <dd><p>Generate keyword strings using the default form, e.g.
-<code>$Revision: 1.4 $</code> for the <code>Revision</code>
+<code>$Revision: 1.5 $</code> for the <code>Revision</code>
 keyword.
 </p></dd>
 <dt>`<samp> -kkvl
@@ -316,8 +350,8 @@ The locker's name is only relevant if <code>cvs admin
 </samp>'</dt>
 <dd><p>Generate only keyword names in keyword strings; omit
 their values.  For example, for the <code>Revision</code>
-keyword, generate the string <code>$Revision: 1.4 $</code>
-instead of <code>$Revision: 1.4 $</code>.  This option
+keyword, generate the string <code>$Revision: 1.5 $</code>
+instead of <code>$Revision: 1.5 $</code>.  This option
 is useful to ignore differences due to keyword
 substitution when comparing different revisions of a
 file (see section <a href="cvs_5.html#SEC64">Merging and keywords</a>).
@@ -327,8 +361,8 @@ file (see section <a href="cvs_5.html#SEC64">Merging and keywords</a>).
 <dd><p>Generate the old keyword string, present in the working
 file just before it was checked in.  For example, for
 the <code>Revision</code> keyword, generate the string
-<code>$Revision: 1.4 $</code> instead of
-<code>$Revision: 1.4 $</code> if that is how the
+<code>$Revision: 1.5 $</code> instead of
+<code>$Revision: 1.5 $</code> if that is how the
 string appeared when the file was checked in.
 </p></dd>
 <dt>`<samp> -kb
@@ -346,10 +380,10 @@ only to terminate lines, this is the same as
 </samp>'</dt>
 <dd><p>Generate only keyword values for keyword strings.  For
 example, for the <code>Revision</code> keyword, generate the string
-<code>5.7</code> instead of <code>$Revision: 1.4 $</code>.
+<code>5.7</code> instead of <code>$Revision: 1.5 $</code>.
 This can help generate files in programming languages
 where it is hard to strip keyword delimiters like
-<code>$Revision: 1.4 $</code> from a string.  However,
+<code>$Revision: 1.5 $</code> from a string.  However,
 further keyword substitution cannot be performed once
 the keyword names are removed, so this option should be
 used with care.
@@ -376,11 +410,28 @@ handle an export containing binary files correctly.
 <h2> 12.5 Problems with the $Log$ keyword. </h2>
 
 <p>The <code>$Log: cvs_12.html,v $
-<p>The <code>Revision 1.4  2003/04/30 18:32:35  pertusus
-<p>The <code>        * texi2html.pl, texi2html.init: add the node as element when there
-<p>The <code>        is a @printindex split accross pages between node and section.
-<p>The <code>        * Tests/*: tests for documents with indices in top and between node
-<p>The <code>        and section.
+<p>The <code>Revision 1.5  2003/05/02 18:20:31  pertusus
+<p>The <code>        * texi2html.pl, texi2html.init: 3 split commands: split at
+<p>The <code>        chapter, section or for every node (previously node and section
+<p>The <code>        where the same than node now).
+<p>The <code>        specific section footer.
+<p>The <code>        find prev and next like makeinfo.
+<p>The <code>        new directions, for nodes: NodeUp (up for node) and Following (next
+<p>The <code>        node in reading order).
+<p>The <code>        if in detailmenu menu entries are not used to find next and prev.
+<p>The <code>        only one Top in nodes and anchors. Any case combination accepted
+<p>The <code>        for any reference.
+<p>The <code>        don't close { when not associated with an @command.
+<p>The <code>        reintroduced code for counting words.
+<p>The <code>        new possibilities for buttons. If this is a ref to a scalar, the
+<p>The <code>        text appears in navigation. If it is an array, the first element
+<p>The <code>        is a direction used for the href, the second element is a scalar
+<p>The <code>        ref for the text (see makeinfo.init in examples for an example).
+<p>The <code>        * Tests/*: test for recursive nodes references and other little
+<p>The <code>        tests
+<p>The <code>        * examples/*: new directory for examples of config files. There
+<p>The <code>        is a file which tries to have an output which looks like makeinfo
+<p>The <code>        --html output (makeinfo.init).
 <p>The <code></code> keyword is somewhat
 controversial.  As long as you are working on your
 development system the information is easily accessible
@@ -390,11 +441,28 @@ the file the history information might be useless
 anyhow.
 </p><p>A more serious concern is that <small>CVS</small> is not good at
 handling <code>$Log: cvs_12.html,v $
-handling <code>Revision 1.4  2003/04/30 18:32:35  pertusus
-handling <code>        * texi2html.pl, texi2html.init: add the node as element when there
-handling <code>        is a @printindex split accross pages between node and section.
-handling <code>        * Tests/*: tests for documents with indices in top and between node
-handling <code>        and section.
+handling <code>Revision 1.5  2003/05/02 18:20:31  pertusus
+handling <code>        * texi2html.pl, texi2html.init: 3 split commands: split at
+handling <code>        chapter, section or for every node (previously node and section
+handling <code>        where the same than node now).
+handling <code>        specific section footer.
+handling <code>        find prev and next like makeinfo.
+handling <code>        new directions, for nodes: NodeUp (up for node) and Following (next
+handling <code>        node in reading order).
+handling <code>        if in detailmenu menu entries are not used to find next and prev.
+handling <code>        only one Top in nodes and anchors. Any case combination accepted
+handling <code>        for any reference.
+handling <code>        don't close { when not associated with an @command.
+handling <code>        reintroduced code for counting words.
+handling <code>        new possibilities for buttons. If this is a ref to a scalar, the
+handling <code>        text appears in navigation. If it is an array, the first element
+handling <code>        is a direction used for the href, the second element is a scalar
+handling <code>        ref for the text (see makeinfo.init in examples for an example).
+handling <code>        * Tests/*: test for recursive nodes references and other little
+handling <code>        tests
+handling <code>        * examples/*: new directory for examples of config files. There
+handling <code>        is a file which tries to have an output which looks like makeinfo
+handling <code>        --html output (makeinfo.init).
 handling <code></code> entries when a branch is
 merged onto the main trunk.  Conflicts often result
 from the merging operation.

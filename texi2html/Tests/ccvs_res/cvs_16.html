@@ -953,11 +953,28 @@ the state of a new revision is set to `<samp>Exp</samp>' when
 it is created.  The state is visible in the output from
 <var>cvs log</var> (see section <a href="#SEC142">log--Print out log information for files</a>), and in the
 `<samp>$Log: cvs_16.html,v $
-`<samp>Revision 1.4  2003/04/30 18:32:35  pertusus
-`<samp>        * texi2html.pl, texi2html.init: add the node as element when there
-`<samp>        is a @printindex split accross pages between node and section.
-`<samp>        * Tests/*: tests for documents with indices in top and between node
-`<samp>        and section.
+`<samp>Revision 1.5  2003/05/02 18:20:31  pertusus
+`<samp>        * texi2html.pl, texi2html.init: 3 split commands: split at
+`<samp>        chapter, section or for every node (previously node and section
+`<samp>        where the same than node now).
+`<samp>        specific section footer.
+`<samp>        find prev and next like makeinfo.
+`<samp>        new directions, for nodes: NodeUp (up for node) and Following (next
+`<samp>        node in reading order).
+`<samp>        if in detailmenu menu entries are not used to find next and prev.
+`<samp>        only one Top in nodes and anchors. Any case combination accepted
+`<samp>        for any reference.
+`<samp>        don't close { when not associated with an @command.
+`<samp>        reintroduced code for counting words.
+`<samp>        new possibilities for buttons. If this is a ref to a scalar, the
+`<samp>        text appears in navigation. If it is an array, the first element
+`<samp>        is a direction used for the href, the second element is a scalar
+`<samp>        ref for the text (see makeinfo.init in examples for an example).
+`<samp>        * Tests/*: test for recursive nodes references and other little
+`<samp>        tests
+`<samp>        * examples/*: new directory for examples of config files. There
+`<samp>        is a file which tries to have an output which looks like makeinfo
+`<samp>        --html output (makeinfo.init).
 `<samp></samp>' and `<samp>$State: Exp $</samp>' keywords
 (see section <a href="cvs_12.html#SEC98">Keyword substitution</a>).  Note that <small>CVS</small>
 uses the <code>dead</code> state for its own purposes; to

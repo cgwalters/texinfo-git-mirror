@@ -25,5 +25,9 @@ This is the top node...
 @unnumbered
 node1 text
 
+@node node below node1,,,node1
+
+Should be a warning for not being in menus and not having a menu entry in
+node1
 
 @bye

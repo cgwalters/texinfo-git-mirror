@@ -1,0 +1,21 @@
+
+Garbage
+
+@node ToP
+Top node
+
+@menu
+* second node::
+* TOP:: myself
+@end menu
+
+@node second node,,top,TOP
+second node (@@node second node,,top,TOP).
+
+@menu
+* other node::
+@end menu
+
+@node other node,,,second node
+ref to TOP @ref{TOP}.
+
