@@ -4,19 +4,9 @@ umlaut.texi(,4) @c    Fri Jan 22 1999
 umlaut.texi(,5) @c
 umlaut.texi(,6) @c Revisions:
 umlaut.texi(,7) @c $Log: umlaut.passtexi,v $
-umlaut.texi(,7) @c Revision 1.10  2004/01/11 14:43:35  pertusus
-umlaut.texi(,7) @c
-umlaut.texi(,7) @c         * texi2html.pl, texi2html.init: parse arguments separated with , in
-umlaut.texi(,7) @c         main program.
-umlaut.texi(,7) @c         Use a new interface for style commands with a hash instead of a string.
-umlaut.texi(,7) @c         The old interface is still available.
-umlaut.texi(,7) @c         Give a type to the style_map commands (accent, style, simple or
-umlaut.texi(,7) @c         special).
-umlaut.texi(,7) @c         Normalise spaces for @url, @uref and @email.
-umlaut.texi(,7) @c         Handle better ignored regions end (at end of file or before @).
-umlaut.texi(,7) @c         Don't reinject @-commands after closing paragraphs.
-umlaut.texi(,7) @c         Add a hash for commands if paragraphs should not be done in these
-umlaut.texi(,7) @c         commands.
+umlaut.texi(,7) @c Revision 1.11  2004/01/11 23:38:49  pertusus
+umlaut.texi(,7) @c         * texi2html.pl, texi2html.init: --- and `` are kept in first arg of
+umlaut.texi(,7) @c         uref and email
 umlaut.texi(,7) @c
 umlaut.texi(,8) @c Revision 1.1  2003/09/01 15:08:15  pertusus
 umlaut.texi(,9) @c         * texi2html.init, texi2html.pl: hide m_cedilla.
