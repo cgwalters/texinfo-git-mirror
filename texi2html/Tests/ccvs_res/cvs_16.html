@@ -993,47 +993,8 @@ the state of a new revision is set to `<samp>Exp</samp>' when
 it is created.  The state is visible in the output from
 <var>cvs log</var> (see section <a href="#SEC142">log--Print out log information for files</a>), and in the
 `<samp>$Log: cvs_16.html,v $
-`<samp>Revision 1.7  2003/05/09 16:46:40  pertusus
-`<samp>        * texi2html.pl, texi2html.init: refs to other manuals conforms to
-`<samp>        makeinfo with separated files for nodes.
-`<samp>        If  $T2H_NODE_FILES (-node-files) is true one file per node is created
-`<samp>        which redirects to the real file or is the node file (if T2H_SPLIT
-`<samp>        at node), to allow for cross manual references.
-`<samp>        Add a T2H_NO_TEXI hash similar with T2H_HREF, T2H_NODES...
-`<samp>        and T2H_THISDOC{title_no_texi} to have a texi free and thus html free
-`<samp>        text for nodes/sections/title to be used in the <title> which element
-`<samp>        which cannot contain other html elements. Also usefull for files with
-`<samp>        node names generation.
-`<samp>        t2h_set_body_text and t2h_protect_html put in texi2html.init to be
-`<samp>        able to make changes more easily.
-`<samp>        $T2H_TOC_LIST_STYLE is used for style in toc. Makes customisation
-`<samp>        easier too.
-`<samp>        * examples/html32.init: init file for html 3.2 generation
-`<samp>        * Tests/test.sh: add validation
-`<samp>        * Tests/*: tests for files with node names generation
-`<samp>
-`<samp>        * texi2html.pl, texi2html.init: put a label in splitted index.
-`<samp>        splitted indices which are not at the level of splitting are kept
-`<samp>        in the same file but in different sections.
-`<samp>        different horizontal rules are global variables.
-`<samp>        functions formatting index summary and index entry split between
-`<samp>        a function in texi2html.pl and smaller functions doing the real
-`<samp>        formatting in texi2html.init.
-`<samp>        no formatting is done in texi2html.init.
-`<samp>        heading appears in documents with only one section.
-`<samp>        if $T2H_SEPARATED_FOOTNOTES is false (-noseparated_footnotes)
-`<samp>        the footnotes are on the page they appear. More possibility
-`<samp>        of customization of footnotes (insert things before and after each
-`<samp>        footnotes and all footnotes).
-`<samp>        use top file for the top element even when there is no @top section.
-`<samp>        when there is a top element and splitting, no other element than
-`<samp>        the top element appear in the top file.
-`<samp>        * examples/makeinfo.init: format footnotes like makeinfo
-`<samp>        * examples/xhtml.init: init file for xhtml
-`<samp>        * Tests/test.sh: little fixes
-`<samp>        * Tests/*: all tex stuff taken from verbatim_html and put in tex.texi.
-`<samp>        tests for index entries in top and before top.
-`<samp>        tests for documents with only one section or node or no node.
+`<samp>Revision 1.8  2003/05/19 17:34:46  pertusus
+`<samp>Some files were corrupted during a commit. These should be the right ones.
 `<samp></samp>' and `<samp>$State: Exp $</samp>' keywords
 (see section <a href="cvs_12.html#SEC98">Keyword substitution</a>).  Note that <small>CVS</small>
 uses the <code>dead</code> state for its own purposes; to

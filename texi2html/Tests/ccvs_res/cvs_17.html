@@ -145,9 +145,9 @@ See <a href="cvs_16.html#SEC117">Global options</a>.
 
 <p>Keyword expansion modes (see section <a href="cvs_12.html#SEC102">Substitution modes</a>):
 </p><table><tr><td>&nbsp;</td><td class="example"><pre>
--kkv  $Id: cvs_17.html,v 1.7 2003/05/09 16:46:40 pertusus Exp $
--kkvl $Id: cvs_17.html,v 1.7 2003/05/09 16:46:40 pertusus Exp $
--kk   $Id: cvs_17.html,v 1.7 2003/05/09 16:46:40 pertusus Exp $
+-kkv  $Id: cvs_17.html,v 1.8 2003/05/19 17:34:46 pertusus Exp $
+-kkvl $Id: cvs_17.html,v 1.8 2003/05/19 17:34:46 pertusus Exp $
+-kk   $Id: cvs_17.html,v 1.8 2003/05/19 17:34:46 pertusus Exp $
 -kv   file1,v 1.1 1993/12/09 03:21:13 joe Exp
 -ko   <i>no expansion</i>
 -kb   <i>no expansion, file is binary</i>
@@ -155,57 +155,18 @@ See <a href="cvs_16.html#SEC117">Global options</a>.
 <p>Keywords (see section <a href="cvs_12.html#SEC99">Keyword List</a>):
 </p><table><tr><td>&nbsp;</td><td class="example"><pre>
 $Author: pertusus $
-$Date: 2003/05/09 16:46:40 $
-$Header: /cvsroot/texinfo/texinfo/texi2html/Tests/ccvs_res/Attic/cvs_17.html,v 1.7 2003/05/09 16:46:40 pertusus Exp $
-$Id: cvs_17.html,v 1.7 2003/05/09 16:46:40 pertusus Exp $
+$Date: 2003/05/19 17:34:46 $
+$Header: /cvsroot/texinfo/texinfo/texi2html/Tests/ccvs_res/Attic/cvs_17.html,v 1.8 2003/05/19 17:34:46 pertusus Exp $
+$Id: cvs_17.html,v 1.8 2003/05/19 17:34:46 pertusus Exp $
 $Locker:  $
 $Name:  $
 $RCSfile: cvs_17.html,v $
-$Revision: 1.7 $
+$Revision: 1.8 $
 $Source: /cvsroot/texinfo/texinfo/texi2html/Tests/ccvs_res/Attic/cvs_17.html,v $
 $State: Exp $
 $Log: cvs_17.html,v $
-Revision 1.7  2003/05/09 16:46:40  pertusus
-        * texi2html.pl, texi2html.init: refs to other manuals conforms to
-        makeinfo with separated files for nodes.
-        If  $T2H_NODE_FILES (-node-files) is true one file per node is created
-        which redirects to the real file or is the node file (if T2H_SPLIT
-        at node), to allow for cross manual references.
-        Add a T2H_NO_TEXI hash similar with T2H_HREF, T2H_NODES...
-        and T2H_THISDOC{title_no_texi} to have a texi free and thus html free
-        text for nodes/sections/title to be used in the <title> which element
-        which cannot contain other html elements. Also usefull for files with
-        node names generation.
-        t2h_set_body_text and t2h_protect_html put in texi2html.init to be
-        able to make changes more easily.
-        $T2H_TOC_LIST_STYLE is used for style in toc. Makes customisation
-        easier too.
-        * examples/html32.init: init file for html 3.2 generation
-        * Tests/test.sh: add validation
-        * Tests/*: tests for files with node names generation
-
-        * texi2html.pl, texi2html.init: put a label in splitted index.
-        splitted indices which are not at the level of splitting are kept
-        in the same file but in different sections.
-        different horizontal rules are global variables.
-        functions formatting index summary and index entry split between
-        a function in texi2html.pl and smaller functions doing the real
-        formatting in texi2html.init.
-        no formatting is done in texi2html.init.
-        heading appears in documents with only one section.
-        if $T2H_SEPARATED_FOOTNOTES is false (-noseparated_footnotes)
-        the footnotes are on the page they appear. More possibility
-        of customization of footnotes (insert things before and after each
-        footnotes and all footnotes).
-        use top file for the top element even when there is no @top section.
-        when there is a top element and splitting, no other element than
-        the top element appear in the top file.
-        * examples/makeinfo.init: format footnotes like makeinfo
-        * examples/xhtml.init: init file for xhtml
-        * Tests/test.sh: little fixes
-        * Tests/*: all tex stuff taken from verbatim_html and put in tex.texi.
-        tests for index entries in top and before top.
-        tests for documents with only one section or node or no node.
+Revision 1.8  2003/05/19 17:34:46  pertusus
+Some files were corrupted during a commit. These should be the right ones.
 
 Revision 1.1  1993/12/09 03:30:17  joe
 Initial revision
