@@ -953,8 +953,19 @@ the state of a new revision is set to `<samp>Exp</samp>' when
 it is created.  The state is visible in the output from
 <var>cvs log</var> (see section <a href="#SEC142">log--Print out log information for files</a>), and in the
 `<samp>$Log: cvs_16.html,v $
-`<samp>Revision 1.2  2003/04/29 15:59:21  pertusus
-`<samp>resulting files synced.
+`<samp>Revision 1.3  2003/04/29 18:55:18  pertusus
+`<samp>        * texi2html.pl, texi2html.init: add $T2H_MENU_SYMBOL before nodes in
+`<samp>        menu and optionnaly before unnumbered section names in menu entry.
+`<samp>        next are not menu childs but next node in menu.
+`<samp>        it is possible not to have next or prev for node.
+`<samp>        any case combination of top is accepted in nodes, menus and
+`<samp>        nodes directions. Not changed in anchors and refs (makeinfo shows
+`<samp>        that kind of inconsistencies too).
+`<samp>        the top_element it the @top section, then the Top node
+`<samp>        and last the first element.
+`<samp>        '(file) node' and '(file)' accepted in menus and nodes references.
+`<samp>        better looking verbose output.
+`<samp>        * Tests/*: tests for documents without sections and double top
 `<samp></samp>' and `<samp>$State: Exp $</samp>' keywords
 (see section <a href="cvs_12.html#SEC98">Keyword substitution</a>).  Note that <small>CVS</small>
 uses the <code>dead</code> state for its own purposes; to
