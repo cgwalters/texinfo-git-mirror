@@ -11,10 +11,10 @@ Send bugs and suggestions to <users@texi2html.cvshome.org>
 
 -->
 <head>
-<title>CVS--Concurrent Versions System v1.12.0.1: A. Guide to CVS commands</title>
+<title>CVS---Concurrent Versions System v1.12.0.1: A. Guide to CVS commands</title>
 
-<meta name="description" content="CVS--Concurrent Versions System v1.12.0.1: A. Guide to CVS commands">
-<meta name="keywords" content="CVS--Concurrent Versions System v1.12.0.1: A. Guide to CVS commands">
+<meta name="description" content="CVS---Concurrent Versions System v1.12.0.1: A. Guide to CVS commands">
+<meta name="keywords" content="CVS---Concurrent Versions System v1.12.0.1: A. Guide to CVS commands">
 <meta name="resource-type" content="document">
 <meta name="distribution" content="global">
 <meta name="Generator" content="texi2html">
@@ -993,7 +993,25 @@ the state of a new revision is set to `<samp>Exp</samp>' when
 it is created.  The state is visible in the output from
 <var>cvs log</var> (see section <a href="#SEC142">log--Print out log information for files</a>), and in the
 `<samp>$Log: cvs_16.html,v $
-`<samp>Revision 1.6  2003/05/07 14:34:44  pertusus
+`<samp>Revision 1.7  2003/05/09 16:46:40  pertusus
+`<samp>        * texi2html.pl, texi2html.init: refs to other manuals conforms to
+`<samp>        makeinfo with separated files for nodes.
+`<samp>        If  $T2H_NODE_FILES (-node-files) is true one file per node is created
+`<samp>        which redirects to the real file or is the node file (if T2H_SPLIT
+`<samp>        at node), to allow for cross manual references.
+`<samp>        Add a T2H_NO_TEXI hash similar with T2H_HREF, T2H_NODES...
+`<samp>        and T2H_THISDOC{title_no_texi} to have a texi free and thus html free
+`<samp>        text for nodes/sections/title to be used in the <title> which element
+`<samp>        which cannot contain other html elements. Also usefull for files with
+`<samp>        node names generation.
+`<samp>        t2h_set_body_text and t2h_protect_html put in texi2html.init to be
+`<samp>        able to make changes more easily.
+`<samp>        $T2H_TOC_LIST_STYLE is used for style in toc. Makes customisation
+`<samp>        easier too.
+`<samp>        * examples/html32.init: init file for html 3.2 generation
+`<samp>        * Tests/test.sh: add validation
+`<samp>        * Tests/*: tests for files with node names generation
+`<samp>
 `<samp>        * texi2html.pl, texi2html.init: put a label in splitted index.
 `<samp>        splitted indices which are not at the level of splitting are kept
 `<samp>        in the same file but in different sections.

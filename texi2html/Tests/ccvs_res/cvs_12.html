@@ -11,10 +11,10 @@ Send bugs and suggestions to <users@texi2html.cvshome.org>
 
 -->
 <head>
-<title>CVS--Concurrent Versions System v1.12.0.1: 12. Keyword substitution</title>
+<title>CVS---Concurrent Versions System v1.12.0.1: 12. Keyword substitution</title>
 
-<meta name="description" content="CVS--Concurrent Versions System v1.12.0.1: 12. Keyword substitution">
-<meta name="keywords" content="CVS--Concurrent Versions System v1.12.0.1: 12. Keyword substitution">
+<meta name="description" content="CVS---Concurrent Versions System v1.12.0.1: 12. Keyword substitution">
+<meta name="keywords" content="CVS---Concurrent Versions System v1.12.0.1: 12. Keyword substitution">
 <meta name="resource-type" content="document">
 <meta name="distribution" content="global">
 <meta name="Generator" content="texi2html">
@@ -98,12 +98,12 @@ a new revision of the file.
 <dd><p>The login name of the user who checked in the revision.
 </p><a name="IDX191"></a>
 </dd>
-<dt><code> $Date: 2003/05/07 14:34:44 $
+<dt><code> $Date: 2003/05/09 16:46:40 $
 </code></dt>
 <dd><p>The date and time (UTC) the revision was checked in.
 </p><a name="IDX192"></a>
 </dd>
-<dt><code> $Header: /cvsroot/texinfo/texinfo/texi2html/Tests/ccvs_res/Attic/cvs_12.html,v 1.6 2003/05/07 14:34:44 pertusus Exp $
+<dt><code> $Header: /cvsroot/texinfo/texinfo/texi2html/Tests/ccvs_res/Attic/cvs_12.html,v 1.7 2003/05/09 16:46:40 pertusus Exp $
 </code></dt>
 <dd><p>A standard header containing the full pathname of the
 <small>RCS</small> file, the revision number, the date (UTC), the
@@ -111,9 +111,9 @@ author, the state, and the locker (if locked).  Files
 will normally never be locked when you use <small>CVS</small>.
 </p><a name="IDX193"></a>
 </dd>
-<dt><code> $Id: cvs_12.html,v 1.6 2003/05/07 14:34:44 pertusus Exp $
+<dt><code> $Id: cvs_12.html,v 1.7 2003/05/09 16:46:40 pertusus Exp $
 </code></dt>
-<dd><p>Same as <code>$Header: /cvsroot/texinfo/texinfo/texi2html/Tests/ccvs_res/Attic/cvs_12.html,v 1.6 2003/05/07 14:34:44 pertusus Exp $</code>, except that the <small>RCS</small>
+<dd><p>Same as <code>$Header: /cvsroot/texinfo/texinfo/texi2html/Tests/ccvs_res/Attic/cvs_12.html,v 1.7 2003/05/09 16:46:40 pertusus Exp $</code>, except that the <small>RCS</small>
 filename is without a path.
 </p><a name="IDX194"></a>
 </dd>
@@ -133,7 +133,25 @@ co -r first</code>, the keyword expands to `<samp>Name: first</samp>'.
 </p><a name="IDX196"></a>
 </dd>
 <dt><code> $Log: cvs_12.html,v $
-<dt><code> Revision 1.6  2003/05/07 14:34:44  pertusus
+<dt><code> Revision 1.7  2003/05/09 16:46:40  pertusus
+<dt><code>         * texi2html.pl, texi2html.init: refs to other manuals conforms to
+<dt><code>         makeinfo with separated files for nodes.
+<dt><code>         If  $T2H_NODE_FILES (-node-files) is true one file per node is created
+<dt><code>         which redirects to the real file or is the node file (if T2H_SPLIT
+<dt><code>         at node), to allow for cross manual references.
+<dt><code>         Add a T2H_NO_TEXI hash similar with T2H_HREF, T2H_NODES...
+<dt><code>         and T2H_THISDOC{title_no_texi} to have a texi free and thus html free
+<dt><code>         text for nodes/sections/title to be used in the <title> which element
+<dt><code>         which cannot contain other html elements. Also usefull for files with
+<dt><code>         node names generation.
+<dt><code>         t2h_set_body_text and t2h_protect_html put in texi2html.init to be
+<dt><code>         able to make changes more easily.
+<dt><code>         $T2H_TOC_LIST_STYLE is used for style in toc. Makes customisation
+<dt><code>         easier too.
+<dt><code>         * examples/html32.init: init file for html 3.2 generation
+<dt><code>         * Tests/test.sh: add validation
+<dt><code>         * Tests/*: tests for files with node names generation
+<dt><code>
 <dt><code>         * texi2html.pl, texi2html.init: put a label in splitted index.
 <dt><code>         splitted indices which are not at the level of splitting are kept
 <dt><code>         in the same file but in different sections.
@@ -170,7 +188,25 @@ file contains:
   /* Here is what people have been up to:
    *
    * $Log: cvs_12.html,v $
-   * Revision 1.6  2003/05/07 14:34:44  pertusus
+   * Revision 1.7  2003/05/09 16:46:40  pertusus
+   *         * texi2html.pl, texi2html.init: refs to other manuals conforms to
+   *         makeinfo with separated files for nodes.
+   *         If  $T2H_NODE_FILES (-node-files) is true one file per node is created
+   *         which redirects to the real file or is the node file (if T2H_SPLIT
+   *         at node), to allow for cross manual references.
+   *         Add a T2H_NO_TEXI hash similar with T2H_HREF, T2H_NODES...
+   *         and T2H_THISDOC{title_no_texi} to have a texi free and thus html free
+   *         text for nodes/sections/title to be used in the <title> which element
+   *         which cannot contain other html elements. Also usefull for files with
+   *         node names generation.
+   *         t2h_set_body_text and t2h_protect_html put in texi2html.init to be
+   *         able to make changes more easily.
+   *         $T2H_TOC_LIST_STYLE is used for style in toc. Makes customisation
+   *         easier too.
+   *         * examples/html32.init: init file for html 3.2 generation
+   *         * Tests/test.sh: add validation
+   *         * Tests/*: tests for files with node names generation
+   *
    *         * texi2html.pl, texi2html.init: put a label in splitted index.
    *         splitted indices which are not at the level of splitting are kept
    *         in the same file but in different sections.
@@ -214,7 +250,7 @@ See section <a href="#SEC103">Problems with the $Log$ keyword.</a>.
 <dd><p>The name of the RCS file without a path.
 </p><a name="IDX198"></a>
 </dd>
-<dt><code> $Revision: 1.6 $
+<dt><code> $Revision: 1.7 $
 </code></dt>
 <dd><p>The revision number assigned to the revision.
 </p><a name="IDX199"></a>
@@ -253,10 +289,10 @@ assigned with <code>cvs admin -s</code>--see <a href="cvs_16.html#SEC120">admin 
 <h2> 12.2 Using keywords </h2>
 
 <p>To include a keyword string you simply include the
-relevant text string, such as <code>$Id: cvs_12.html,v 1.6 2003/05/07 14:34:44 pertusus Exp $</code>, inside the
+relevant text string, such as <code>$Id: cvs_12.html,v 1.7 2003/05/09 16:46:40 pertusus Exp $</code>, inside the
 file, and commit the file.  <small>CVS</small> will automatically
 expand the string as part of the commit operation.
-</p><p>It is common to embed the <code>$Id: cvs_12.html,v 1.6 2003/05/07 14:34:44 pertusus Exp $</code> string in
+</p><p>It is common to embed the <code>$Id: cvs_12.html,v 1.7 2003/05/09 16:46:40 pertusus Exp $</code> string in
 the source files so that it gets passed through to
 generated files.  For example, if you are managing
 computer program source code, you might include a
@@ -274,11 +310,11 @@ binary files.
 </p><table><tr><td>&nbsp;</td><td class="example"><pre>
 $ ident samp.c
 samp.c:
-     $Id: cvs_12.html,v 1.6 2003/05/07 14:34:44 pertusus Exp $
+     $Id: cvs_12.html,v 1.7 2003/05/09 16:46:40 pertusus Exp $
 $ gcc samp.c
 $ ident a.out
 a.out:
-     $Id: cvs_12.html,v 1.6 2003/05/07 14:34:44 pertusus Exp $
+     $Id: cvs_12.html,v 1.7 2003/05/09 16:46:40 pertusus Exp $
 </pre></td></tr></table>
 <a name="IDX202"></a>
 <p>S<small>CCS</small> is another popular revision control system.
@@ -290,7 +326,7 @@ easy to include keywords that are detected by either
 command.  Simply prefix the keyword with the
 magic <small>SCCS</small> phrase, like this:
 </p><table><tr><td>&nbsp;</td><td class="example"><pre>
-static char *id=&quot;@(#) $Id: cvs_12.html,v 1.6 2003/05/07 14:34:44 pertusus Exp $&quot;;
+static char *id=&quot;@(#) $Id: cvs_12.html,v 1.7 2003/05/09 16:46:40 pertusus Exp $&quot;;
 </pre></td></tr></table>
 <hr size="6">
 <a name="NOD101"></a>
@@ -363,7 +399,7 @@ see <a href="cvs_9.html#SEC80">Handling binary files</a>, and <a href="cvs_5.htm
 <dt>`<samp> -kkv
 </samp>'</dt>
 <dd><p>Generate keyword strings using the default form, e.g.
-<code>$Revision: 1.6 $</code> for the <code>Revision</code>
+<code>$Revision: 1.7 $</code> for the <code>Revision</code>
 keyword.
 </p></dd>
 <dt>`<samp> -kkvl
@@ -377,8 +413,8 @@ The locker's name is only relevant if <code>cvs admin
 </samp>'</dt>
 <dd><p>Generate only keyword names in keyword strings; omit
 their values.  For example, for the <code>Revision</code>
-keyword, generate the string <code>$Revision: 1.6 $</code>
-instead of <code>$Revision: 1.6 $</code>.  This option
+keyword, generate the string <code>$Revision: 1.7 $</code>
+instead of <code>$Revision: 1.7 $</code>.  This option
 is useful to ignore differences due to keyword
 substitution when comparing different revisions of a
 file (see section <a href="cvs_5.html#SEC64">Merging and keywords</a>).
@@ -388,8 +424,8 @@ file (see section <a href="cvs_5.html#SEC64">Merging and keywords</a>).
 <dd><p>Generate the old keyword string, present in the working
 file just before it was checked in.  For example, for
 the <code>Revision</code> keyword, generate the string
-<code>$Revision: 1.6 $</code> instead of
-<code>$Revision: 1.6 $</code> if that is how the
+<code>$Revision: 1.7 $</code> instead of
+<code>$Revision: 1.7 $</code> if that is how the
 string appeared when the file was checked in.
 </p></dd>
 <dt>`<samp> -kb
@@ -407,10 +443,10 @@ only to terminate lines, this is the same as
 </samp>'</dt>
 <dd><p>Generate only keyword values for keyword strings.  For
 example, for the <code>Revision</code> keyword, generate the string
-<code>5.7</code> instead of <code>$Revision: 1.6 $</code>.
+<code>5.7</code> instead of <code>$Revision: 1.7 $</code>.
 This can help generate files in programming languages
 where it is hard to strip keyword delimiters like
-<code>$Revision: 1.6 $</code> from a string.  However,
+<code>$Revision: 1.7 $</code> from a string.  However,
 further keyword substitution cannot be performed once
 the keyword names are removed, so this option should be
 used with care.
@@ -442,7 +478,25 @@ handle an export containing binary files correctly.
 <h2> 12.5 Problems with the $Log$ keyword. </h2>
 
 <p>The <code>$Log: cvs_12.html,v $
-<p>The <code>Revision 1.6  2003/05/07 14:34:44  pertusus
+<p>The <code>Revision 1.7  2003/05/09 16:46:40  pertusus
+<p>The <code>        * texi2html.pl, texi2html.init: refs to other manuals conforms to
+<p>The <code>        makeinfo with separated files for nodes.
+<p>The <code>        If  $T2H_NODE_FILES (-node-files) is true one file per node is created
+<p>The <code>        which redirects to the real file or is the node file (if T2H_SPLIT
+<p>The <code>        at node), to allow for cross manual references.
+<p>The <code>        Add a T2H_NO_TEXI hash similar with T2H_HREF, T2H_NODES...
+<p>The <code>        and T2H_THISDOC{title_no_texi} to have a texi free and thus html free
+<p>The <code>        text for nodes/sections/title to be used in the <title> which element
+<p>The <code>        which cannot contain other html elements. Also usefull for files with
+<p>The <code>        node names generation.
+<p>The <code>        t2h_set_body_text and t2h_protect_html put in texi2html.init to be
+<p>The <code>        able to make changes more easily.
+<p>The <code>        $T2H_TOC_LIST_STYLE is used for style in toc. Makes customisation
+<p>The <code>        easier too.
+<p>The <code>        * examples/html32.init: init file for html 3.2 generation
+<p>The <code>        * Tests/test.sh: add validation
+<p>The <code>        * Tests/*: tests for files with node names generation
+<p>The <code>
 <p>The <code>        * texi2html.pl, texi2html.init: put a label in splitted index.
 <p>The <code>        splitted indices which are not at the level of splitting are kept
 <p>The <code>        in the same file but in different sections.
@@ -474,7 +528,25 @@ the file the history information might be useless
 anyhow.
 </p><p>A more serious concern is that <small>CVS</small> is not good at
 handling <code>$Log: cvs_12.html,v $
-handling <code>Revision 1.6  2003/05/07 14:34:44  pertusus
+handling <code>Revision 1.7  2003/05/09 16:46:40  pertusus
+handling <code>        * texi2html.pl, texi2html.init: refs to other manuals conforms to
+handling <code>        makeinfo with separated files for nodes.
+handling <code>        If  $T2H_NODE_FILES (-node-files) is true one file per node is created
+handling <code>        which redirects to the real file or is the node file (if T2H_SPLIT
+handling <code>        at node), to allow for cross manual references.
+handling <code>        Add a T2H_NO_TEXI hash similar with T2H_HREF, T2H_NODES...
+handling <code>        and T2H_THISDOC{title_no_texi} to have a texi free and thus html free
+handling <code>        text for nodes/sections/title to be used in the <title> which element
+handling <code>        which cannot contain other html elements. Also usefull for files with
+handling <code>        node names generation.
+handling <code>        t2h_set_body_text and t2h_protect_html put in texi2html.init to be
+handling <code>        able to make changes more easily.
+handling <code>        $T2H_TOC_LIST_STYLE is used for style in toc. Makes customisation
+handling <code>        easier too.
+handling <code>        * examples/html32.init: init file for html 3.2 generation
+handling <code>        * Tests/test.sh: add validation
+handling <code>        * Tests/*: tests for files with node names generation
+handling <code>
 handling <code>        * texi2html.pl, texi2html.init: put a label in splitted index.
 handling <code>        splitted indices which are not at the level of splitting are kept
 handling <code>        in the same file but in different sections.
