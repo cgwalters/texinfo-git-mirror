@@ -11,10 +11,10 @@ Send bugs and suggestions to <users@texi2html.cvshome.org>
 
 -->
 <head>
-<title>CVS--Concurrent Versions System v1.11.5.1: 9. Handling binary files</title>
+<title>CVS--Concurrent Versions System v1.12.0.1: 9. Handling binary files</title>
 
-<meta name="description" content="CVS--Concurrent Versions System v1.11.5.1: 9. Handling binary files">
-<meta name="keywords" content="CVS--Concurrent Versions System v1.11.5.1: 9. Handling binary files">
+<meta name="description" content="CVS--Concurrent Versions System v1.12.0.1: 9. Handling binary files">
+<meta name="keywords" content="CVS--Concurrent Versions System v1.12.0.1: 9. Handling binary files">
 <meta name="resource-type" content="document">
 <meta name="distribution" content="global">
 <meta name="Generator" content="texi2html">
@@ -144,7 +144,7 @@ nor keyword expansion will be done.
 </p><p>Here is an example of how you can create a new file
 using the `<samp>-kb</samp>' flag:
 </p><table><tr><td>&nbsp;</td><td class="example"><pre>
-$ echo '$Id: cvs_9.html,v 1.1 2003/04/22 17:55:53 pertusus Exp $' &gt; kotest
+$ echo '$Id: cvs_9.html,v 1.2 2003/04/29 15:59:21 pertusus Exp $' &gt; kotest
 $ cvs add -kb -m&quot;A test file&quot; kotest
 $ cvs ci -m&quot;First checkin; contains a keyword&quot; kotest
 </pre></td></tr></table>
@@ -152,7 +152,7 @@ $ cvs ci -m&quot;First checkin; contains a keyword&quot; kotest
 one can use the <code>cvs admin</code> command to recover.
 For example:
 </p><table><tr><td>&nbsp;</td><td class="example"><pre>
-$ echo '$Id: cvs_9.html,v 1.1 2003/04/22 17:55:53 pertusus Exp $' &gt; kotest
+$ echo '$Id: cvs_9.html,v 1.2 2003/04/29 15:59:21 pertusus Exp $' &gt; kotest
 $ cvs add -m&quot;A test file&quot; kotest
 $ cvs ci -m&quot;First checkin; contains a keyword&quot; kotest
 $ cvs admin -kb kotest
