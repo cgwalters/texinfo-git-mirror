@@ -4,9 +4,18 @@ umlaut.texi(,4) @c    Fri Jan 22 1999
 umlaut.texi(,5) @c
 umlaut.texi(,6) @c Revisions:
 umlaut.texi(,7) @c $Log: umlaut.passtexi,v $
-umlaut.texi(,7) @c Revision 1.11  2004/01/11 23:38:49  pertusus
-umlaut.texi(,7) @c         * texi2html.pl, texi2html.init: --- and `` are kept in first arg of
-umlaut.texi(,7) @c         uref and email
+umlaut.texi(,7) @c Revision 1.12  2004/01/19 15:22:03  pertusus
+umlaut.texi(,7) @c
+umlaut.texi(,7) @c         * texi2html.pl, texi2html.init, examples/*: New variables $DO_CONTENTS
+umlaut.texi(,7) @c         and $DO_SCONTENTS, $OPEN_QUOTE_SYMBOL and $CLOSE_QUOTE_SYMBOL.
+umlaut.texi(,7) @c         Use a hash for the files such that each element may be associated with
+umlaut.texi(,7) @c         any file name and written down to that file. This should enable
+umlaut.texi(,7) @c         customization of the file names.
+umlaut.texi(,7) @c         print_Top_header and print_Top_footer are called from the main program.
+umlaut.texi(,7) @c         Add Texi2HTML::THIS_ELEMENT holding the current element structure.
+umlaut.texi(,7) @c
+umlaut.texi(,7) @c         * doc/texi2html.texi: document the new variables and the new interface
+umlaut.texi(,7) @c         with a hash reference for style @-commands.
 umlaut.texi(,7) @c
 umlaut.texi(,8) @c Revision 1.1  2003/09/01 15:08:15  pertusus
 umlaut.texi(,9) @c         * texi2html.init, texi2html.pl: hide m_cedilla.
