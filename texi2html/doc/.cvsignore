@@ -1,6 +1,7 @@
 Makefile
 texi2html.html
 texi2html.info
+texi2html.info-?
 texi2html.aux
 texi2html.cp
 texi2html.cps
