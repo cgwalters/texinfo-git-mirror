@@ -7,3 +7,5 @@ config.status
 texi2html
 texi2html.1
 check_texinfo.pl
+texi2html-*.tar.gz
+texi2html-*.tar.bz2
