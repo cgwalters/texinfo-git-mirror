@@ -1,4 +1,4 @@
-# $Id: srclist.txt,v 1.10 2003/03/25 14:07:48 karl Exp $
+# $Id: srclist.txt,v 1.11 2003/03/26 16:02:03 karl Exp $
 # Files for which we are not the source.
 # This is meant for the script gnulib/config/srclist-update.
 
@@ -80,7 +80,6 @@ $GNULIBSRC/config/missing	.
 $GNULIBSRC/config/mkinstalldirs	.
 #
 $GNULIBSRC/doc/COPYING		.
-$GNULIBSRC/doc/COPYING.DOC	.
 $GNULIBSRC/doc/INSTALL		./INSTALL.generic
 $GNULIBSRC/doc/fdl.texi		doc
 #
