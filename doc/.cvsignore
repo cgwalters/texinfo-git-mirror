@@ -1,4 +1,5 @@
 *.html
+*.pdf
 Makefile
 Makefile.in
 info-stnd.??
