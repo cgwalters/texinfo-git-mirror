@@ -1,4 +1,4 @@
-# $Id: srclist.txt,v 1.21 2005/04/25 13:22:26 karl Exp $
+# $Id: srclist.txt,v 1.22 2005/08/19 12:12:35 karl Exp $
 # Files which we keep in sync from other places.
 # This is input for the script config/srclist-update in the gnulib
 # project on savannah.
@@ -12,7 +12,7 @@
 # implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 $EMACSSRC/man/info.texi			doc
-$TEXMFROOT/tex/generic/dvips/epsf.tex	doc
+#$TEXMFROOT/tex/generic/dvips/epsf.tex	doc
 $TEXMFROOT/tex/plain/misc/pdfcolor.tex	doc
 
 
