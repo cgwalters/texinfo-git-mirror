@@ -3,5 +3,6 @@ Makefile
 Makefile.in
 ginstall-info
 install-info
+pdftexi2dvi
 texindex
 texinfo.cat
