@@ -13,4 +13,7 @@ tex_in_copying_l2h.css
 tex_in_copying_l2h_images.log
 tex_in_copying_l2h_images.out
 tex_l2h_images.out
-l2h_cache.pm
+math_not_closed_l2h.css
+math_not_closed_l2h_images.log
+math_not_closed_l2h_images.out
+*-l2h_cache.pm
