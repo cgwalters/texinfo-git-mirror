@@ -2,5 +2,13 @@ Makefile
 Makefile.in
 .deps
 alloca.h
+getopt.h
+stat.h
+stdbool.h
 stdint.h
+stdlib.h
+string.h
+sys_time.h
+unistd.h
+wchar.h
 wctype.h
