@@ -4,7 +4,6 @@ Makefile.in
 defs
 ginstall-info
 install-info
-pdftexi2dvi
 testSubDir
 texindex
 texinfo.cat
