@@ -1,4 +1,4 @@
-# $Id: srclist.txt,v 1.23 2006/05/29 13:50:00 karl Exp $
+# $Id: srclist.txt,v 1.24 2007/07/02 21:40:32 olegkat Exp $
 # Files which we keep in sync from other places.
 # This is input for the script config/srclist-update in the gnulib
 # project on savannah.
@@ -13,7 +13,6 @@
 
 $EMACSSRC/man/info.texi			doc
 #$TEXMFROOT/tex/generic/dvips/epsf.tex	doc
-$TEXMFROOT/tex/plain/misc/pdfcolor.tex	doc
 
 
 $GETTEXT/gettext-runtime/ABOUT-NLS		.
