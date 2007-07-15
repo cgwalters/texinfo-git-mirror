@@ -16,3 +16,12 @@ sys_stat_.h
 malloca.c
 malloca.h
 malloca.valgrind
+config.charset
+localcharset.c
+localcharset.h
+ref-add.sin
+ref-del.sin
+streq.h
+unitypes.h
+uniwidth.h
+wcwidth.c
