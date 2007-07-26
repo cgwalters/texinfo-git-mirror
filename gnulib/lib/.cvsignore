@@ -12,7 +12,6 @@ sys_time.h
 unistd.h
 wchar.h
 wctype.h
-sys_stat_.h
 malloca.c
 malloca.h
 malloca.valgrind
