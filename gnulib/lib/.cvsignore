@@ -12,15 +12,4 @@ sys_time.h
 unistd.h
 wchar.h
 wctype.h
-malloca.c
-malloca.h
-malloca.valgrind
 config.charset
-localcharset.c
-localcharset.h
-ref-add.sin
-ref-del.sin
-streq.h
-unitypes.h
-uniwidth.h
-wcwidth.c
