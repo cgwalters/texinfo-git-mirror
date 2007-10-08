@@ -12,3 +12,4 @@ sys_time.h
 unistd.h
 wchar.h
 wctype.h
+malloc.c
