@@ -13,3 +13,14 @@ unistd.h
 wchar.h
 wctype.h
 malloc.c
+alloca.in.h
+getopt.in.h
+intprops.h
+stdint.in.h
+stdlib.in.h
+string.in.h
+sys_stat.in.h
+sys_time.in.h
+unistd.in.h
+wchar.in.h
+wctype.in.h
