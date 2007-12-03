@@ -24,3 +24,6 @@ sys_time.in.h
 unistd.in.h
 wchar.in.h
 wctype.in.h
+mbscasecmp.c
+mbsncasecmp.c
+stdbool.in.h

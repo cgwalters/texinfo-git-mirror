@@ -1,3 +1,5 @@
 .deps
 .dirstamp
 malloc.m4
+mbscasecmp.m4
+mbsncasecmp.m4
