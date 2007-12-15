@@ -1,5 +1,4 @@
 @archive
-@groff
 @tests
 Makefile
 Makefile.in
@@ -14,3 +13,4 @@ configure
 stamp-h1
 texinfo-*
 xmi
+.rerun*
