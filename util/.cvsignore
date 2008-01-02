@@ -2,8 +2,6 @@
 Makefile
 Makefile.in
 defs
-ginstall-info
-install-info
 testSubDir
 texindex
 texinfo.cat
