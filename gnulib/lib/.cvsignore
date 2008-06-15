@@ -2,6 +2,7 @@ Makefile
 Makefile.in
 .deps
 alloca.h
+configmake.h
 getopt.h
 stat.h
 stdbool.h
