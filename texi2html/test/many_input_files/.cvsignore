@@ -1,0 +1,9 @@
+*.log
+*.out
+l2h_tmp_dir.init
+diffs
+Makefile
+indices
+index_split
+tex_l2h
+tex_t4ht
