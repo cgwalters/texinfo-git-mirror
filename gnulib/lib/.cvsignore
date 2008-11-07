@@ -2,13 +2,14 @@ Makefile
 Makefile.in
 .deps
 alloca.h
-configmake.h
+argz.h
+errno.h
 getopt.h
-stat.h
 stdbool.h
 stdint.h
 stdlib.h
 string.h
+sys_stat.h
 sys_time.h
 unistd.h
 wchar.h
