@@ -1,0 +1,55 @@
+This is formats_in_menu.info, produced by makeinfo version 4.13 from
+formats_in_menu.texi.
+
+
+File: formats_in_menu.info,  Node: Top,  Next: (gcc),  Up: (dir)
+
+* Menu:
+
+* (gcc):: text 
+- item
+     table line
+
+   Some text.
+
+* Menu:
+
+* (manual):: desc
+comment
+* (info):: before verbatim 
+some @ verb{' atim
+* (texinfo):: in @ verbatim
+
+* (manual2):: $Log: formats_in_menu.info,v $
+* (manual2):: Revision 1.1  2009/06/28 23:45:34  pertusus
+* (manual2)::         * texi2html.pl, texi2html.init, formats/*: use a specific handler to
+* (manual2)::         handle misc commands, $misc_command_line, instead of turning the
+* (manual2)::         @-command into an unknown macro (and misc_command_line_texi if
+* (manual2)::         remove_texi).
+* (manual2)::         With inline content use a different content element for each
+* (manual2)::         @*content.
+* (manual2)::         Check for a symbol following @end command argument.
+* (manual2)::         * tests/formatting/*: add test results for info and raw plaintext.
+* (manual2)::
+* (truc):: description
+acronym
+
+   After menu
+
+* Menu:
+
+* (manual):: 
+item
+
+     * (node)::
+     menu comment ?
+     * (node2):: description ?
+       description continue ?
+     comment.
+
+
+
+Tag Table:
+Node: Top92
+
+End Tag Table
