@@ -4,4 +4,6 @@ tests.out
 l2h_tmp_dir.init
 diffs
 out
+out_all
+out_info
 .texinfo
