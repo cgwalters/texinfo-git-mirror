@@ -12,3 +12,5 @@ texi2html-*.tar.gz
 texi2html-*.tar.bz2
 texi2html-*.zip
 texi2html_configured.pl
+language-subtag-registry
+texi2html.temp
