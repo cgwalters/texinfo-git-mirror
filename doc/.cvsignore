@@ -1,7 +1,7 @@
+*.1
 *.html
-*.pdf
 *.info
-texput.log
+*.pdf
 Makefile
 Makefile.in
 info-stnd.??
@@ -28,8 +28,9 @@ texinfo.aux
 texinfo.dvi
 texinfo.html
 texinfo.log
+texinfo.tex.sig
 texinfo.toc
 texinfo.xml
-version.texi
+texput.log
 version-stnd.texi
-*.1
+version.texi
