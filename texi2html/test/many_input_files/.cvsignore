@@ -1,6 +1,5 @@
 *.log
 *.out
-l2h_tmp_dir.init
 diffs
 Makefile
 indices

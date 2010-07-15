@@ -1,7 +1,6 @@
 Makefile
 tests.log
 tests.out
-l2h_tmp_dir.init
 diffs
 out
 out_info
