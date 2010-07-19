@@ -1,0 +1,10 @@
+Makefile
+tests.log
+tests.out
+diffs
+out
+out_all
+out_info
+out_docbook
+out_html
+out_xml
