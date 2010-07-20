@@ -1,6 +1,7 @@
 Makefile
 tests.log
 tests.out
+equivalent_nodes-noderename.cnf
 diffs
 out
 out_all
