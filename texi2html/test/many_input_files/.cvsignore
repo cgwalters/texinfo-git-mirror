@@ -2,6 +2,7 @@
 *.out
 diffs
 Makefile
+Makefile.in
 indices
 index_split
 tex_l2h

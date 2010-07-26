@@ -1,4 +1,5 @@
 Makefile
+Makefile.in
 tests.log
 tests.out
 equivalent_nodes-noderename.cnf
