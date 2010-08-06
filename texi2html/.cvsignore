@@ -3,6 +3,7 @@ Makefile.in
 autom4te-2.53.cache
 autom4te.cache
 check_texinfo.pl
+config.rpath
 config.cache
 config.log
 config.status
