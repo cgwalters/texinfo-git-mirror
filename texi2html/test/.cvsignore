@@ -1,3 +1,4 @@
 Makefile
 Makefile.in
 path_separator
+htmlxref.cnf
