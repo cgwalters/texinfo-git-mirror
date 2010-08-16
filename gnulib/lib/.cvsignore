@@ -3,6 +3,7 @@ Makefile.in
 .deps
 alloca.h
 argz.h
+configmake.h
 errno.h
 getopt.h
 stdbool.h
