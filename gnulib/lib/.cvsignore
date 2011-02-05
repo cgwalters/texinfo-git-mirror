@@ -12,6 +12,9 @@ stdlib.h
 string.h
 sys_stat.h
 sys_time.h
+time.h
 unistd.h
+unitypes.h
+uniwidth.h
 wchar.h
 wctype.h
