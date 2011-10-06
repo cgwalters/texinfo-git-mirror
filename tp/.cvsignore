@@ -1,5 +1,8 @@
 Makefile
+Makefile.in
+Makefile.incl
 Texinfo-Parser-*.tar.gz
 blib
 pm_to_blib
 language-subtag-registry
+texi2any
