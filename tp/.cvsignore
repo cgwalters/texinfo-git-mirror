@@ -1,6 +1,6 @@
 Makefile
 Makefile.in
-Makefile.incl
+Makefile.tres
 Texinfo-Parser-*.tar.gz
 blib
 pm_to_blib
