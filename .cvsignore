@@ -1,3 +1,4 @@
+.rerun*
 @archive
 @tests
 Makefile
@@ -5,6 +6,7 @@ Makefile.in
 TAGS
 aclocal.m4
 autom4te.cache
+config.cache
 config.h
 config.in
 config.log
@@ -13,4 +15,3 @@ configure
 stamp-h1
 texinfo-*
 xmi
-.rerun*
