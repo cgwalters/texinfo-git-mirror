@@ -1,4 +1,4 @@
-# $Id: srclist.txt,v 1.26 2011/10/17 00:06:51 karl Exp $
+# $Id: srclist.txt,v 1.27 2011/10/21 18:42:36 karl Exp $
 # Files which we keep in sync from other places.
 # This is input for the script config/srclist-update in the gnulib
 # project on savannah.
@@ -36,6 +36,6 @@ $GNULIBSRC/build-aux/install-sh		build-aux
 $GNULIBSRC/build-aux/mdate-sh		build-aux
 $GNULIBSRC/build-aux/missing		build-aux
 #
-$GNULIBSRC/doc/COPYING		.
-$GNULIBSRC/doc/INSTALL		./INSTALL.generic
-$GNULIBSRC/doc/fdl.texi		doc
+$GNULIBSRC/doc/COPYINGv3		./COPYING
+$GNULIBSRC/doc/INSTALL			./INSTALL.generic
+$GNULIBSRC/doc/fdl.texi			doc
